@@ -1,0 +1,32 @@
+slack          : https://setu-cert-comp-sci-25.slack.com
+moodle         : https://moodle.wit.ie/course/view.php?id=202930
+youtube        : https://www.youtube.com/playlist?list=PLEuhMaR29LyDZgm_czNHyVaJFXJxrKIYI
+parent         : course/setu-cert-comp-sci-2025
+credits        : Siobhan Roche, Mairead Meagher, Pete Windle
+icon:
+  type: ri:settings-4-fill
+  color: f4a13b
+auth           : 4
+#whitelist      : 1
+labStepsAutoNumber: true
+ignorepin      : 2125
+ignore         :
+
+#- topic-00-assignments
+#topic-00-induction
+- topic-000-assignments-PREP
+#- topic-01-first-contact
+#- topic-02-selection_and_iteration
+#- topic-03-methods
+#- topic-04-arrays
+#- topic-05-intro-to-classes
+#- topic-06-encapsulation
+#- topic-07-collections-crud
+#- topic-08-crud-persistence
+#- topic-09-inheritance
+- topic-10-temp
+- topic-11-abstraction-interfaces-sorting
+- topic-11-collections-map-set
+- topic-12-testing-git-other
+- topic-13-workspace
+- topic-wip
