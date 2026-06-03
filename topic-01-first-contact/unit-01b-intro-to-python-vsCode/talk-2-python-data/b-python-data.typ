@@ -8,10 +8,10 @@
     color: rgb("#c6f1c7"),
     title: [Python & Data Science],
     subtitle: [How Python Became the Standard],
-    author: [Historical Overview],
+    author: [Programming Fundamentals Team],
     date: datetime.today(),
-    institution: [Python History],
-    contact: [mairead.meagher\@setu.ie],
+    institution: [SETU],
+  
     logo-position: bottom + right,
   ),
 )

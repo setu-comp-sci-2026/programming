@@ -7,10 +7,10 @@
   config-info(
     title: [Python as a Language],
     subtitle: [Interpretation, History & Evolution],
-    author: [Mairead Meagher],
+    author: [Programming Fundamentals Team],
     date: datetime.today(),
     institution: [SETU],
-    contact: [mairead.meagher\@setu.ie],
+
     logo: image("assets/python.png", width: 1.5cm, height: 1.5cm),
   ),
 )

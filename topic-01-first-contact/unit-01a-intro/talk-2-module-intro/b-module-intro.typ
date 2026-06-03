@@ -15,7 +15,7 @@
     author: [Mairead Meagher, Siobhan Roche, Peter Windle],
     date: datetime.today(),
     institution: [SETU],
-    contact: [mairead.meagher\@setu.ie],
+
     logo-position: bottom + right,
     logo: my-logo
   ),
