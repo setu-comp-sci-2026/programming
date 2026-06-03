@@ -5,4 +5,4 @@ icon:
 ---
 Intro to Python
 
-# Python Basics
+Python Basics
