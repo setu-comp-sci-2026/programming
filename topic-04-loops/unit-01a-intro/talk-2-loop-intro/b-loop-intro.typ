@@ -169,6 +169,17 @@ while count <= 5:
 #v(1em)
 Problem: `count += 1` is missing.
 
+== Corrected code
+
+```python
+count = 1
+
+while count <= 5:
+    print(count)
+    count += 1 
+```
+
+
 = Useful loop patterns
 == Validation loop
 #align(center)[
