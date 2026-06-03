@@ -83,13 +83,13 @@ Examples:
 = Selection versus Iteration
 == Selection asks once
 #align(center)[
-  #image("assets/selection.png", width: 80%)
+  #image("assets/selection.png", height: 80%)
 ]
 
 
 == Iteration asks repeatedly
 #align(center)[
-  #image("assets/loop.png", width: 80%)
+  #image("assets/loop.png", height: 80%)
 ]
 == The key difference
 
@@ -114,13 +114,13 @@ Examples:
 == Every loop needs four things
 
 #align(center)[
-  #image("assets/everyloop.png", width: 80%)
+  #image("assets/everyloop.png", height: 80%)
 ]
 
 == Counting to five: flowchart
 
 #align(center)[
-  #image("assets/count5loop.png", width: 80%)
+  #image("assets/count5loop.png", height: 80%)
 ]
 
 == Trace the loop
@@ -155,7 +155,7 @@ The condition `count <= 5` becomes false.
 == What if we forget the update?
 
 #align(center)[
-  #image("assets/infinite.png", width: 80%)
+  #image("assets/infinite.png", height: 80%)
 ]
 == Infinite loop in code
 
@@ -184,13 +184,13 @@ Problem: `count += 1` is missing.
 == Sentinel loop
 
 #align(center)[
-  #image("assets/sentinel.png", width: 80%)
+  #image("assets/sentinel.png", height: 80%)
 ]
 
 == Menu loop
 
 #align(center)[
-  #image("assets/menuchoice.png", width: 80%)
+  #image("assets/menuchoice.png", height: 80%)
 ]
 
 = Activities
