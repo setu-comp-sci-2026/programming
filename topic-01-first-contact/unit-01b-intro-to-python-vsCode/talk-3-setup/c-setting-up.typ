@@ -10,9 +10,9 @@
   aspect-ratio: "16-9",
   config-info(
     color: rgb("#c6f1c7"),
-    title: [Programming Fundamentals ],
+    title: [Programming Fundamentals],
     subtitle: [Topic 1 - Intro to Python - Setting up ],
-    author: [Progrmamming Fundamentals Team],
+    author: [Programming Fundamentals Team],
     date: datetime.today(),
     institution: [SETU],
   
@@ -70,11 +70,12 @@
 = Setting up Python in Visual Studio Code
 To set up Python in Visual Studio Code, follow these steps:
 1. Open Visual Studio Code and create a new file with a `.py` extension (e.g., `hello.py`).
-2. Write your Python code in the file. For example, you can write a simple "
-Hello, World!" program:
+2. Write your Python code in the file. For example, you can write a simple "Hello, World!" program:
+#align(center)[
+   #rect(fill: luma(230), stroke: 2pt + black, radius: 4pt, inset: 10pt)[
 ```python
 print("Hello, World!")
-```
+```]]
 = Running Your First Python Code in Visual Studio Code
 To run your Python code in Visual Studio Code, follow these steps:
 1. Open the Python file you want to run (e.g., `hello.py`).
@@ -83,11 +84,28 @@ To run your Python code in Visual Studio Code, follow these steps:
    - Press `Ctrl+F5` (Windows/Linux) or `Cmd+F5` (macOS) to run the code without debugging.
 
 3. The output of your Python code will be displayed in the terminal. For example, if you run the "Hello, World!" program, you should see the output:
-```
+#align(center)[
+   #rect(fill: luma(230), stroke: 2pt + black, radius: 4pt, inset: 10pt)[
+```python
 Hello, World!
+```]]
+= Running Python Code in the Integrated Terminal
+You can also run Python code directly in the integrated terminal. To do this:
+1. Open the integrated terminal in Visual Studio Code by going to `View > Terminal` or pressing `` Ctrl+` `` (Windows/Linux) or `` Cmd+` `` (macOS).  
+
+2. In the terminal, you can run Python code by typing `python3` (or `python` if you have an earlier version). 
+#align(center)[
+   #rect(fill: luma(230), stroke: 2pt + black, radius: 4pt, inset: 10pt)[
+```python
+>>> print("hello")
+hello
+>>> 2 + 2
+4
+>>> x = 10
+>>> x * 5
+50
 ```
-
-
+  ] ]
 
 
 
