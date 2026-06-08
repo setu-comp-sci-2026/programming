@@ -6,7 +6,7 @@ credits        : Siobhan Roche, Mairead Meagher, Pete Windle
 icon:
   type: ri:settings-4-fill
   color: f4a13b
-auth           : 4
+auth           : 0
 #whitelist      : 1
 labStepsAutoNumber: true
 ignorepin      : 2125
