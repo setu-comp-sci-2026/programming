@@ -8,6 +8,14 @@
 #let my-logo = image("assets/python.png", width: 1.5cm, height: 1.5cm)
 #let opaque-logo = image("assets/UShape-SETU.png", width: 60%)
 
+#let note(body) = block(
+  fill: blue.lighten(85%),
+  stroke: (paint: blue.lighten(50%), thickness: 1pt),
+  radius: 8pt,
+  inset: 16pt,
+  width: 100%,
+  body
+)
 #show: stargazer-theme.with(
   aspect-ratio: "16-9",
   config-info(
@@ -107,46 +115,153 @@ Sequence is the default flow of control in a program. It simply means that the s
 #pause
 - A conditional statement evaluates a Boolean condition and its result will determine which section of the code is executed.
 ]
+= Relational Operators
+  #slide[
+    #table(
+  columns: (auto, 1fr, 2fr),
+  align: (center, center, center),
+  stroke: gray,
+
+  // Header row
+  table.cell(fill: blue.lighten(80%))[*Operator*],
+  table.cell(fill: blue.lighten(80%))[*Syntax*],
+  table.cell(fill: blue.lighten(80%))[*Returns #text(fill: red)[true] if...*],
+
+  // Rows
+  text(size: 1.4em, weight: "bold")[>],
+  `x > y`,
+  [x is *greater* than y],
+
+  text(size: 1.4em, weight: "bold")[>=],
+  `x >= y`,
+  [x is *greater than or equal* to y],
+
+  text(size: 1.4em, weight: "bold")[<],
+  `x < y`,
+  [x is *less* than y],
+
+  text(size: 1.4em, weight: "bold")[<=],
+  `x <= y`,
+  [x is *less than or equal* to y],
+
+  text(size: 1.4em, fill: red, weight: "bold")[==],
+  text(fill: red)[`x == y`],
+  [x and y are *equal*],
+
+  text(size: 1.4em, weight: "bold")[!=],
+  `x != y`,
+  [x and y are *not equal*],
+)
+#pause
+ #text(size: 1.4em, fill:red, weight: "bold")[\= is an assignment operator and doesn’t test for equality. 
+\== is used to test for equality.]
+
+  ]
+
 = Conditional Statement - if statement
 == if statement syntax
 
 #slide[
+  #grid(
+    columns: (1fr, auto),
+    column-gutter: 1em,
+    align: horizon,
+    // Left cell: the code display
+    stack(
+      spacing: 1em,
+      // Line 1: if [box] :
+      stack(dir: ltr, spacing: 0.3em,
+        text(font: "Courier New", size: 1em, weight: "bold")[if ],
+        rect(stroke: 1.5pt + black, inset: 4pt)[
+          #text(font: "Courier New", size: 1em, weight: "bold", fill: red, style: "italic")[perform some #text(fill: red)[_boolean_] test]
+        ],
+        text(font: "Courier New", size: 1em, weight: "bold")[ :],
+      ),
+      // Line 2: indented body
+      pad(left: 2em,
+        text(font: "Courier New", size: 1em, weight: "bold", fill: green, style: "italic")[Do these statement(s) if the test is true]
+      ),
+    ),
+    
+    // Right cell: annotation
+    grid.cell(align: bottom)[
+    #text(fill: green, size: 1em)[← actions if\ condition is true]
+  
+])
+  
+#pause
 
+#note[
 
+  *NOTE:*
+  #list(
+    [Python relies on indentation to define scope in the code.],
+    [Indentation is a whitespace at the beginning of the line.],
+    [We saw this earlier when writing functions.],
+  )
+]]
 
+#slide[
+  Example of an if statement:
+ #grid(
+    columns: (1fr, 1fr),
+    column-gutter: 1em,
+    align: top,
+    // Cell 1: code block
+    rect(fill: luma(230), stroke: 2pt + black, radius: 4pt, inset: 10pt)[
+      #text(size: 0.7em)[```python
+age = 25
+if age >= 18:
+    print("You are an adult.")
+    print("You can vote.")
+```
+] ],
+ uncover("2-")[
+      #stack( 
+   spacing: 0.5em,
+        [This will output:],
 
-  #v(.1em)
-  #text(font: "Courier New", size: 1.4em, weight: "bold")[if ] 
-  #rect(stroke: 1.5pt + black, inset: 6pt)[
-    #text(font: "Courier New", size: 1.4em, weight: "bold", fill: red, style: "italic")[perform some #text(fill: red)[_boolean_] test : ]
-  ]
-  #text(font: "Courier New", size: 1.4em, weight: "bold")[:]
+ rect(fill: luma(230), stroke: 2pt + black, radius: 4pt, inset: 10pt)[
+      #align(center)[#image("assets/if-1.png", width: 9cm)]
+ ],
+      )
+    ],
+  )
+]
 
-  #v(0.5em)
-  #pad(left: 2em)[
-    #text(font: "Courier New", size: 1.4em, weight: "bold", fill: green, style: "italic")[Do these statement(s) if the test is true]
-  ]
-  #pause
-    #place(top + center, dy: 2em)[
-    #text(fill: rgb("#8B4513"))[_boolean_ condition to be tested]
-  ]
+#slide[
+  Example of a sequence of  if statements:
+  #grid(
+    columns: (1fr, 1fr),
+    column-gutter: 1em,
+    align: top,
+    // Cell 1: code block
+    rect(fill: luma(230), stroke: 2pt + black, radius: 4pt, inset: 10pt)[
+      #text(size: 0.7em)[```python
+      age = 18
+      if age > 18:
+          print("You are an adult.")
+          print("And you are over eighteen")
 
-  #place(top + center, dy: 3.5em)[
-    #canvas({
-      draw.line((-2, 0), (-6, -2), mark: (end: ">", size: 0.5em ))
-    })
-  ]
+      if age == 18:
+          print("Congratulations on reaching adulthood!")
 
-   #pause
-    #place(top + left, dy: 1em)[
-    #text(fill: rgb("#8B4513"))['if' keyword]
-    ]
+      if age < 18:
+          print("You are a minor.")
+```]
+    ],
+    // Cell 2: output
+    uncover("2-")[
+      #stack(
+        spacing: 0.5em,
+        [This will output:],
+        rect(fill: luma(230), stroke: 2pt + black, radius: 4pt, inset: 10pt)[
+          #align(center)[#image("assets/if-2.png", width: 100%)]
+        ],
+      )
+    ],
+  )
+]
 
-  #place(top + left, dy: 2em)[
-    #canvas({
-      draw.line((4,3), (4, 1.8), mark: (end: ">", size: 2em ))
-    })
-  ]
-    ]
-
+==if-else statement syntax
 
