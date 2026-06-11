@@ -1,7 +1,7 @@
 ---
 icon:
   type: fluent:hand-wave-16-regular
-  color: green
+  color:red
 ---
 # 01: First Contact
 
