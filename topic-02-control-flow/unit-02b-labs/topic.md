@@ -1,9 +1,9 @@
 ---
 icon:
   type: fluent:hand-wave-16-regular
-  color:red
+  color: red
 ---
-# 01: First Contact
+# 02: Conditional Control
 
-Introduction to the module
+if statements, relational operators
 
