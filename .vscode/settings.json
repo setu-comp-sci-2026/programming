@@ -1,0 +1,25 @@
+{
+  "todo-tree.general.tags": [
+    "TODO",
+    "FIXME",
+    "BUG",
+    "HACK",
+    "NOTE",
+    "XXX"
+  ],
+  "todo-tree.general.tagGroups": {
+    "TODO": ["TODO"],
+    "FIXME": ["FIXME", "BUG"],
+    "NOTE": ["NOTE", "XXX", "HACK"]
+  },
+  "todo-tree.highlighting.enabled": true,
+  "todo-tree.highlights.highlightBackground": true,
+  "todo-tree.highlights.highlightForeground": false,
+  "todo-tree.tree.showScanModeButton": true,
+  "todo-tree.general.schemes": [
+    "file",
+    "ssh",
+    "untitled",
+    "vscode-notebook-cell"
+  ]
+}
