@@ -24,7 +24,7 @@ ignore         :
 - topic-07-classes
 - topic-08-shop-app
 - topic-09-collections
-- topic-10-crudpersistence
+- topic-10-crud-persistence
 - topic-11-inheritance
 - topic-12-abstraction-sorting
 - topic-13-testing 
