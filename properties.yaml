@@ -1,17 +1,11 @@
-slack          : https://setu-cert-comp-sci-25.slack.com
-moodle         : https://moodle.wit.ie/course/view.php?id=202930
-youtube        : https://www.youtube.com/playlist?list=PLEuhMaR29LyDZgm_czNHyVaJFXJxrKIYI
-parent         : course/setu-cert-comp-sci-2025
-credits        : Siobhan Roche, Mairead Meagher, Pete Windle
+credits        : Programming Fundamentals Team
 icon:
-  type: ri:settings-4-fill
-  color: f4a13b
+  type: material-icon-theme:python
+  color: "3572A5"
 auth           : 0
-#whitelist      : 1
 labStepsAutoNumber: true
 ignorepin      : 2125
-ignore         :
-
+ignore         : 
 
 #- topic-00-induction
 - topic-01-data-types
