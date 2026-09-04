@@ -1,9 +1,8 @@
 ---
 icon:
-  type: line-md:loading-loop
+  type: carbon:loop
   color: purple
 ---
-# 04: Iteration
+# 04: Iteration — Loops
 
-Introduction to the loops - for and while
-
+for loops · while loops · range · variable scope · break · continue · nested loops

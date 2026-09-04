@@ -12,21 +12,22 @@ labStepsAutoNumber: true
 ignorepin      : 2125
 ignore         :
 
-#- topic-00-assignments
-#topic-00-induction
-- topic-000-assignments-PREP
-#- topic-01-first-contact
-#- topic-02-selection_and_iteration
-#- topic-03-methods
-#- topic-04-arrays
-#- topic-05-intro-to-classes
-#- topic-06-encapsulation
-#- topic-07-collections-crud
-#- topic-08-crud-persistence
-#- topic-09-inheritance
-- topic-10-temp
-- topic-11-abstraction-interfaces-sorting
-- topic-11-collections-map-set
-- topic-12-testing-git-other
-- topic-13-workspace
-- topic-wip
+
+#- topic-00-induction
+- topic-01-data-types
+- topic-02-control-flow
+- topic-03-functions
+- topic-04-loops
+- topic-05-lists 
+- topic-05a-data-structures
+- topic-06-crud
+- topic-07-classes
+- topic-08-shop-app
+- topic-09-collections
+- topic-10-crudpersistence
+- topic-11-inheritance
+- topic-12-abstraction-sorting
+- topic-13-testing 
+- topic-55-lists
+- topic-66-vscode-io
+- topic-99-misc-topics-not-for-students
