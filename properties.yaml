@@ -2,26 +2,29 @@ credits        : Programming Fundamentals Team
 icon:
   type: material-icon-theme:python
   color: "3572A5"
+whitelist:
+  - maireadmeagher
+  - SPowerRoche
 auth           : 1
 labStepsAutoNumber: true
-ignorepin      : 2125
-ignore         : 
+# ignorepin      : 2125
+# ignore         : 
 
-#- topic-00-induction
-- topic-01-data-types
-- topic-02-control-flow
-- topic-03-functions
-- topic-04-loops
-- topic-05-lists 
-- topic-05a-data-structures
-- topic-06-crud
-- topic-07-classes
-- topic-08-shop-app
-- topic-09-collections
-- topic-10-crud-persistence
-- topic-11-inheritance
-- topic-12-abstraction-sorting
-- topic-13-testing 
-- topic-55-lists
-- topic-66-vscode-io
-- topic-99-misc-topics-not-for-students
+# #- topic-00-induction
+# - topic-01-data-types
+# - topic-02-control-flow
+# - topic-03-functions
+# - topic-04-loops
+# - topic-05-lists 
+# - topic-05a-data-structures
+# - topic-06-crud
+# - topic-07-classes
+# - topic-08-shop-app
+# - topic-09-collections
+# - topic-10-crud-persistence
+# - topic-11-inheritance
+# - topic-12-abstraction-sorting
+# - topic-13-testing 
+# - topic-55-lists
+# - topic-66-vscode-io
+# - topic-99-misc-topics-not-for-students
