@@ -6,4 +6,4 @@ icon:
 
 # 01: Bookmarks and folders
 
-CLick on card for Video (7 minutes) 
+Click on card for Video (7 minutes) 

@@ -5,4 +5,4 @@ icon:
 ---
 # 01: Setup your filing system
 
-CLick on card for Video (5 minutes)
+Click on card for Video (5 minutes)
