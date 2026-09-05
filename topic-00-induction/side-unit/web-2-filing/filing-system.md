@@ -1,8 +1,8 @@
 ---
 icon:
   type: lucide-lab:cabinet-filing
-  color: red
+  color: green
 ---
-# 00: Setup your filing system
+# 01: Setup your filing system
 
 Video (5 minutes)
