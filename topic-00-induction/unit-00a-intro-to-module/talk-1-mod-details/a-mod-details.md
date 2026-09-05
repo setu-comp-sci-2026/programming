@@ -6,5 +6,5 @@ icon:
 
 Description and Assessment
 
-Content  · Assessment Schedule  · Learning Technologies
+Content  · Assessment Schedule  
 
