@@ -5,7 +5,7 @@ icon:
 whitelist:
   - maireadmeagher
   - SPowerRoche
-auth           : 1
+auth           : 0
 labStepsAutoNumber: true
 ignorepin      : 2125
 ignore         : 
