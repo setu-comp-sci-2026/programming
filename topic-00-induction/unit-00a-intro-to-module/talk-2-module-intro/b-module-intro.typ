@@ -145,14 +145,12 @@
       rect(fill: rgb("#20B2AA"), inset: 0.5em)[
         #set align(center)
         #set text(size: 12pt)
-        Mon
-
+    
         Tues
       ],
       rect(fill: rgb("#20B2AA"), inset: 0.5em)[
         #set align(center)
         #set text(size: 12pt)
-        Wed
 
         Thurs
       ],
