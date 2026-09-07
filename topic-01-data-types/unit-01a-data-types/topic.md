@@ -1,1 +1,2 @@
-Lectures
+Monday Lecture
+

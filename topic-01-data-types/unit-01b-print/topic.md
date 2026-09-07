@@ -1,1 +1,1 @@
-Labs
+Wednesday Lecture
