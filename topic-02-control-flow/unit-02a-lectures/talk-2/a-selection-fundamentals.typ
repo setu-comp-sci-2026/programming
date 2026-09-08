@@ -69,20 +69,21 @@ Today we move from programs that always do the same thing to programs that can *
 
 = A Real Decision
 #slide[
+#grid(columns: (1.15fr, 0.85fr), gutter: 24pt,
+[
 A cinema might ask:
-
 ```python
 age = int(input("Enter your age: "))
 ```
-
 #pause
-What should happen next?
-
 - If age is 18 or more → allow entry.
 - Otherwise → refuse entry.
 
-#pause
-The program needs a condition whose answer is either *True* or *False*.
+The program needs a condition whose answer is *True* or *False*.
+],
+[
+#image("assets/cinema.svg", width: 100%)
+])
 ]
 
 = Boolean Values
@@ -248,16 +249,19 @@ If the condition is false, Python simply skips the indented block.
 
 = Mini Activity: Free Delivery
 #slide[
+#grid(columns: (1.15fr, 0.85fr), gutter: 24pt,
+[
 An online shop gives free delivery when an order is €50 or more.
 
 Complete:
 ```python
 order_total = float(input("Order total: €"))
-
 # your selection here
 ```
 #pause
-#note[Write the condition first. Then decide what statement belongs inside the block.]
+#note[Write the condition first. Then decide what belongs inside the block.]
+],
+[#image("assets/delivery.svg", width: 100%)])
 ]
 
 = Activity Solution
@@ -408,22 +412,22 @@ else:
 
 = Mini-program: Ticket Price
 #slide[
+#grid(columns: (1.2fr, 0.8fr), gutter: 24pt,
+[
 Requirement:
-
 - Under 16 → €8
 - Everyone else → €12
-
 #pause
 ```python
 age = int(input("Age: "))
-
 if age < 16:
     price = 8
 else:
     price = 12
-
 print("Ticket price: €", price)
 ```
+],
+[#image("assets/ticket.svg", width: 100%)])
 ]
 
 = Think Before You Code
