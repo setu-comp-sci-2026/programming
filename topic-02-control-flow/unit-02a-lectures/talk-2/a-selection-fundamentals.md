@@ -3,6 +3,6 @@ icon:
   type: carbon:if-else
   color: red
 ---
-# 02: Conditional Control
-if, if-else, if-elif-else, rel ops, logical opss
+# 02: Conditional Control 1
+if, if-else
 
