@@ -49,6 +49,24 @@
   // config-common(handout:true),  for handout version of the slides(no animations, etc.)
 )
 
+// Fix: Stargazer's knob-marker is a zero-height box with the circle placed
+// *below* the baseline, so the bullet hangs low. Lift it to the x-height.
+#let knob = box(
+  width: 0.5em,
+  place(
+    dy: -0.55em,
+    circle(
+      fill: gradient.radial(
+        rgb("#005bac").lighten(100%),
+        rgb("#005bac").darken(40%),
+        focal-center: (30%, 30%),
+      ),
+      radius: 0.25em,
+    ),
+  ),
+)
+#show list: set list(marker: knob)
+
 #set heading(numbering: numbly("{1}.", default: "1.1"))
 #set page(
   background: place(left + top, dx: 8.5em, dy: 1em,)[
