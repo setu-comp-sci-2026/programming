@@ -3,7 +3,7 @@
 // Rewritten from PDF original. Title page omitted.
 // Assessment schedule is driven from semester1.yaml.
 
-#let data = yaml("a-mod-details.yaml")
+#let data = yaml("../../../calendar.yaml")
 
 // ── Page & typography ─────────────────────────────────────────────────────────
 #set page(
