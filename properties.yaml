@@ -12,7 +12,7 @@ ignore         :
 
 # #- topic-00-induction
 # - topic-01-data-types
- - topic-02-control-flow
+# - topic-02-control-flow
  - topic-03-functions
  - topic-04-loops
  - topic-05-lists 
