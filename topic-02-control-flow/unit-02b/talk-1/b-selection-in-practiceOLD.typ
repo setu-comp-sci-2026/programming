@@ -181,10 +181,6 @@ Python provides:
 
 = and
 #slide[
-#grid(
-  columns: (1.15fr, 0.85fr),
-  gutter: 1.2em,
-  [
 A theme park ride requires:
 
 - age 12 or older
@@ -198,9 +194,6 @@ else:
 ```
 #pause
 Both tests must be `True`.
-  ],
-  [#image("assets/theme-park.svg", width: 100%)]
-)
 ]
 
 = Truth Table: and
@@ -217,10 +210,6 @@ Both tests must be `True`.
 
 = or
 #slide[
-#grid(
-  columns: (1.15fr, 0.85fr),
-  gutter: 1.2em,
-  [
 A discount is available if the customer is:
 
 - a student, *or*
@@ -232,9 +221,6 @@ if is_student or age >= 65:
 ```
 #pause
 Only one condition needs to be `True`.
-  ],
-  [#image("assets/discount.svg", width: 100%)]
-)
 ]
 
 = Truth Table: or
@@ -297,10 +283,6 @@ For a value to be inside a range, we usually need `and`.
 
 = Activity: Login Rule
 #slide[
-#grid(
-  columns: (1.2fr, 0.8fr),
-  gutter: 1.2em,
-  [
 A user may log in only when:
 
 - username is `student`
@@ -312,9 +294,6 @@ Write the condition.
 username = input("Username: ")
 password = input("Password: ")
 ```
-  ],
-  [#image("assets/login.svg", width: 100%)]
-)
 ]
 
 = Login Solution
@@ -402,10 +381,6 @@ else:
 = Full Example: Delivery Charge
 #slide[
 #set text(size: 17pt)
-#grid(
-  columns: (1.25fr, 0.75fr),
-  gutter: 1.2em,
-  [
 ```python
 order = float(input("Order value: €"))
 member = input("Member? y/n: ").lower()
@@ -417,9 +392,6 @@ else:
 
 print("Delivery: €", delivery)
 ```
-  ],
-  [#image("assets/delivery.svg", width: 100%)]
-)
 #set text(size: 21pt)
 ]
 
@@ -456,10 +428,6 @@ else:
 
 = Design Activity: Cinema Ticket
 #slide[
-#grid(
-  columns: (1.15fr, 0.85fr),
-  gutter: 1.2em,
-  [
 Design a program using these rules:
 
 - Under 5 → Free
@@ -468,9 +436,6 @@ Design a program using these rules:
 - 65+ → €9
 
 Before coding, write the conditions in the order Python should test them.
-  ],
-  [#image("assets/cinema.svg", width: 100%)]
-)
 ]
 
 = Cinema Ticket Solution

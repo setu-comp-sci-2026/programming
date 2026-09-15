@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" rx="28" fill="#eef7ff"/>
+<path d="M50 380 C160 80 300 90 390 310 S620 460 750 120" fill="none" stroke="#287bd3" stroke-width="18"/>
+<path d="M60 400H750" stroke="#263238" stroke-width="10"/>
+<g stroke="#263238" stroke-width="8"><path d="M150 400V250"/><path d="M300 400V175"/><path d="M470 400V335"/><path d="M650 400V255"/></g>
+<g transform="translate(235 130) rotate(8)"><rect x="0" y="0" width="180" height="65" rx="18" fill="#E63946"/><circle cx="35" cy="70" r="16" fill="#263238"/><circle cx="145" cy="70" r="16" fill="#263238"/><circle cx="45" cy="20" r="14" fill="#ffd166"/><circle cx="90" cy="20" r="14" fill="#ffd166"/><circle cx="135" cy="20" r="14" fill="#ffd166"/></g>
+<text x="400" y="465" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="700" fill="#263238">AGE + HEIGHT → RIDE?</text>
+</svg>
