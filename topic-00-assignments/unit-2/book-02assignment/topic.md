@@ -1,0 +1,41 @@
+# Programming Fundamentals – Assignment 2
+
+## Build an Expert System: From Rules to Knowledge
+
+**Weighting:** 70%  
+**Individual Assignment**
+
+- [Overview](./01.Overview.md)
+- [The Challenge](./02.The-Challenge.md)
+- [What Are You Building](./03.What-Are-You-Building.md)
+- [Your Knowledge Base](./04.Your-Knowledge-Base.md)
+- [Questions](./05.Questions.md)
+- [Recommendations](./06.Recommendations.md)
+- [Rules](./07.Rules.md)
+- [Knowledge Is Data](./08.Knowledge-Is-Data.md)
+- [Changing Knowledge Without Changing Python](./09.Changing-Knowledge-Without-Changing-Python.md)
+- [Building the Knowledge Base](./10.Building-the-Knowledge-Base.md)
+- [Persistent Knowledge JSON](./11.Persistent-Knowledge-JSON.md)
+- [Knowledge Base Management](./12.Knowledge-Base-Management.md)
+- [Persistence](./13.Persistence.md)
+- [The Inference Engine](./14.The-Inference-Engine.md)
+- [Matching Rules](./15.Matching-Rules.md)
+- [Multiple Possible Recommendations](./16.Multiple-Possible-Recommendations.md)
+- [Explainability Why](./17.Explainability-Why.md)
+- [Classes and Objects](./18.Classes-and-Objects.md)
+- [The KnowledgeBase Class](./19.The-KnowledgeBase-Class.md)
+- [Inheritance](./20.Inheritance.md)
+- [Polymorphism](./21.Polymorphism.md)
+- [Exception Handling and Validation](./22.Exception-Handling-and-Validation.md)
+- [Testing](./23.Testing.md)
+- [Minimum Requirements](./24.Minimum-Requirements.md)
+- [Development Milestones](./25.Development-Milestones.md)
+- [Development Checkpoints](./26.Development-Checkpoints.md)
+- [Final Demonstration](./27.Final-Demonstration.md)
+- [The Knowledge Base Challenge](./28.The-Knowledge-Base-Challenge.md)
+- [Use of AI Tools](./29.Use-of-AI-Tools.md)
+- [Submission](./30.Submission.md)
+- [Assessment](./31.Assessment.md)
+- [What Makes a Strong Knowledge Base](./32.What-Makes-a-Strong-Knowledge-Base.md)
+- [From Decision Program to Expert System](./33.From-Decision-Program-to-Expert-System.md)
+- [The Bigger AI Picture](./34.The-Bigger-AI-Picture.md)
