@@ -507,23 +507,48 @@ year % 4 == 0
 #pause
 Write a program that prints `Leap year` or `Not a leap year`.
 ]
-
-= Selection + Functions
+= Leap Year — Simplified Solution
 #slide[
-Selection works naturally inside functions:
+The simplified rule:
+
+A year is a leap year if it is divisible by 4.
 
 ```python
-def result(mark):
-    if mark >= 40:
-        return "Pass"
-    else:
-        return "Fail"
+year = int(input("Enter a year: "))
 
-print(result(72))
+if year % 4 == 0:
+    print("Leap year")
+else:
+    print("Not a leap year")
 ```
+
 #pause
-This prepares us to build larger programs from small, reusable pieces.
+#note[This is a useful first solution for practising modulo `%` and `if-else`, but it does not cover the full leap-year rule.]
 ]
+
+= Leap Year — Full Solution
+#slide[
+The full rule also needs to account for century years:
+
+```python
+year = int(input("Enter a year: "))
+
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("Leap year")
+        else:
+            print("Not a leap year")
+    else:
+        print("Leap year")
+else:
+    print("Not a leap year")
+```
+
+#pause
+For example: `2000` is a leap year, but `1900` is not.
+]
+
 
 = Final Check
 #slide[
