@@ -36,6 +36,17 @@
   it
 )
 
+// Baseline-aligned bullet markers (theme default hangs below the text)
+#set list(
+  marker: (
+    text(fill: rgb("#3572A5"))[•],
+    text(fill: rgb("#3572A5"))[‣],
+    text(fill: rgb("#3572A5"))[–],
+  ),
+  indent: 0.6em,
+  body-indent: 0.6em,
+)
+
 #set heading(numbering: numbly("{1}.", default: "1.1"))
 #set page(background: place(left + top, dx: 8.5em, dy: 1em)[#opaque-logo])
 #title-slide()

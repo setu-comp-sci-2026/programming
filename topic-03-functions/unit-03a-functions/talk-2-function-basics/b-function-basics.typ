@@ -1,6 +1,5 @@
 #import "@preview/touying:0.7.3": *
 #import themes.stargazer: *
-#import "@preview/numbly:0.1.0": numbly
 
 #let my-logo = image("assets/python.png", width: 1.5cm, height: 1.5cm)
 #let opaque-logo = image("assets/UShape-SETU.png", width: 60%)
@@ -18,24 +17,10 @@
     logo: my-logo,
   ),
 )
-#let note(body) = block(
-  fill: rgb("#c6f1c7"),
-  stroke: (paint: rgb("#4caf50"), thickness: 1.5pt),
-  radius: 8pt,
-  inset: 16pt,
-  width: 100%,
-  body
-)
-#show raw.where(block: true): it => block(
-  fill: rgb("#dbeafe"),
-  stroke: (paint: rgb("#3572A5"), thickness: 1.5pt),
-  radius: 6pt,
-  inset: 12pt,
-  width: 100%,
-  it
-)
 
-#set heading(numbering: numbly("{1}.", default: "1.1"))
+#import "../../../preamble.typ": *
+#show: styles
+
 #set page(background: place(left + top, dx: 8.5em, dy: 1em)[#opaque-logo])
 #title-slide()
 #set page(background: none)
@@ -50,9 +35,13 @@ A *function* is a named, reusable block of code that performs a specific task.
 *Why use functions?*
 
 - *Reuse* — write once, call many times
+#pause
 - *Abstraction* — hide complexity behind a simple name
+#pause
 - *Organisation* — break a big program into small, understandable parts
+#pause
 - *Testing* — test each piece independently
+#pause
 - *Maintenance* — fix a bug in one place, fixed everywhere
 
 #pause
@@ -69,6 +58,7 @@ def function_name(parameters):
     # function body
     return value   # optional
 ```
+#pause
 #note[
   *NOTE:*
   
@@ -176,19 +166,21 @@ def calculate_area(width, height):
 ```
 
 #pagebreak()
-#list(
-[Access docstrings with `help()` or `.__doc__`:],
+Access docstrings with `help()` or `.__doc__`:
 
+*Step 1* — go to the terminal, start the REPL and import the file:
 
-[Use REPL (gp to terminal and run 
-     ```python
-     $python3   #loads the interpreter (REPL)
-     >>> import calculate #imports the calculate.py file
-
-     ```
-    
 ```python
->>> print(fi.calculate_area.__doc__)
+$ python3                 # loads the interpreter (REPL)
+>>> import calculate      # imports the calculate.py file
+```
+
+#pagebreak()
+
+*Step 2* — print the docstring:
+
+```python
+>>> print(calculate.calculate_area.__doc__)
 Calculate and return the area of a rectangle.
 
 Args:
@@ -198,9 +190,9 @@ Args:
 Returns:
     The area as a number (width * height).
 ```
-     ])
+
 #pagebreak()
-#note[*NOTE*
+#note[*NOTE: *
 *Best practice:* every function should have a docstring.]
 
 = Functions in Practice
@@ -213,7 +205,9 @@ def celsius_to_fahrenheit(celsius):
 def fahrenheit_to_celsius(fahrenheit):
     """Convert Fahrenheit to Celsius."""
     return (fahrenheit - 32) * 5 / 9
-
+```
+#pagebreak()
+```python
 # Use the functions
 boiling_c = 100
 boiling_f = celsius_to_fahrenheit(boiling_c)
@@ -233,7 +227,11 @@ def get_student_data():
     score = float(input("Score (0-100): "))
     return name, score
 ```
+
+TODO: check why pauses don't work
+]
 #pause
+#text(size: 13pt)[
 ```python
 def calculate_grade(score):
     """Return letter grade for a numeric score."""
@@ -243,13 +241,17 @@ def calculate_grade(score):
     if score >= 60: return "D"
     return "F"
 ```
+]
 #pause
+#text(size: 13pt)[
 ```python
 def print_result(name, score, grade):
     """Print formatted student result."""
     print(f"\n{name}: {score:.1f} → Grade {grade}")
 ```
+]
 #pause
+#text(size: 13pt)[
 ```python
 # Main program
 name, score = get_student_data()
