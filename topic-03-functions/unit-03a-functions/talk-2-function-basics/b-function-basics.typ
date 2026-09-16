@@ -219,7 +219,7 @@ print(f"{freezing_f}°F = {freezing_c}°C")   # 32°F = 0.0°C
 ```
 
 = Building a Program with Functions
-#text(size: 13pt)[
+
 ```python
 def get_student_data():
     """Prompt user for student name and score."""
@@ -228,10 +228,8 @@ def get_student_data():
     return name, score
 ```
 
-TODO: check why pauses don't work
-]
 #pause
-#text(size: 13pt)[
+
 ```python
 def calculate_grade(score):
     """Return letter grade for a numeric score."""
@@ -241,24 +239,24 @@ def calculate_grade(score):
     if score >= 60: return "D"
     return "F"
 ```
-]
-#pause
-#text(size: 13pt)[
+
+#pagebreak()
+
 ```python
 def print_result(name, score, grade):
     """Print formatted student result."""
     print(f"\n{name}: {score:.1f} → Grade {grade}")
 ```
-]
+
 #pause
-#text(size: 13pt)[
+
 ```python
 # Main program
 name, score = get_student_data()
 grade = calculate_grade(score)
 print_result(name, score, grade)
 ```
-]
+
 #slide(
     title: none,
     header: none,
