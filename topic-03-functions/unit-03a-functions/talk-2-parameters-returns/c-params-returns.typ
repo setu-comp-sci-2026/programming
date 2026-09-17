@@ -103,21 +103,6 @@ greet("Bob", "Hi")          # Hi, Bob!
 greet("Carol", greeting="Good morning")   # Good morning, Carol!
 ```
 
-#pagebreak()
-
-// *Practical example — configurable repeat:*
-
-// ```python
-// def repeat_print(message, times=3, separator="-"):
-//     for i in range(times):
-//         print(message)
-//     print(separator * len(message))
-
-// repeat_print("Hello")               # 3 times, dashes
-// repeat_print("Warning!", times=5)   # 5 times, dashes
-// repeat_print("Hi", times=2, separator="=")   # 2 times, equals
-// ```
-
 = The return Statement
 
 `return` sends a value back to the caller and *immediately exits* the function.
@@ -186,7 +171,7 @@ A *ternary expression* returns one of two values on a single line:
 return <value_if_true> if <condition> else <value_if_false>
 ```
 
-#pause
+#pagebreak()
 
 ```python
 def is_even(n):
