@@ -1,3 +1,3 @@
-# 3a: Functions (Part 1)
+# Monday
 
 defining functions · parameters · return values · scope
