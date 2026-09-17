@@ -1,6 +1,6 @@
 ---
 icon:
-  type: carbon:scope
+  type: carbon:function-2
   color: blue
 ---
 Scope and Pure Functions
