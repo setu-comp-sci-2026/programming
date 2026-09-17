@@ -1,3 +1,3 @@
-# 4a: Functions (Part 1)
+# 3a: Functions (Part 1)
 
 defining functions · parameters · return values · scope

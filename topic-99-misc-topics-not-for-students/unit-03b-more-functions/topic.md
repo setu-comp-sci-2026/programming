@@ -1,3 +1,3 @@
-# 4b: Functions (Part 2)
+# 2b: Functions (Part 2)
 
 string methods ·  built-in functions
