@@ -1,8 +1,0 @@
-# Programming Fundamentals – Assignment 1
-
-## Make My Decision!
-
-**Weighting:** 30%  
-**Individual Assignment**
-
-

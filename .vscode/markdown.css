@@ -1,0 +1,11 @@
+/* To set up todo lists in markdown, in VS Code
+
+/* Unchecked tasks in red */
+li:has(> input[type="checkbox"]:not(:checked)) {
+  color: red;
+}
+
+/* Keep ticked tasks (including nested ones) in the normal colour */
+li:has(> input[type="checkbox"]:checked) {
+  color: var(--vscode-foreground);
+}
