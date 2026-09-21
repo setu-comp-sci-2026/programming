@@ -249,7 +249,9 @@ def process():
     score = float(input("Score: "))
     grade = "Pass" if score >= 60 else "Fail"
     print(f"{name}: {grade}")
-
+```
+#pagebreak()
+```python
 # GOOD — separate concerns
 def get_input(prompt):
     return input(prompt)
