@@ -1,13 +1,13 @@
 
 
-# # Example 1
-# def draw_line():
-#     print("-" * 30)  # 30 hyphens
+# Example 1
+def draw_line():
+    print("-" * 30)  # 30 hyphens
 
-# def print_header(title):#
-#     draw_line()
-#     print(title)
-#     draw_line()
+def print_header(title):#
+    draw_line()
+    print(title)
+    draw_line()
 
 # print_header("Student Report") # prints ---- Student Report ----
 
