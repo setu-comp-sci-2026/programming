@@ -5,4 +5,4 @@ icon:
 ---
 Modules and Imports
 
-using library modules · import vs from-import · writing your own module · the same-folder rule
+using library modules · importing, writing modules
