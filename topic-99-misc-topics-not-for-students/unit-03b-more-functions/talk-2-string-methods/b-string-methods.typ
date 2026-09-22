@@ -102,13 +102,20 @@ print("  ".isspace())           # True
 sentence = "The quick brown fox jumps over the lazy dog"
 
 # Finding substrings
+
 print(sentence.find("fox"))        # 16  (index of first match of "fox"- index starts at 0)
 print(sentence.find("cat"))        # -1  (not found)
 print(sentence.count("the"))       # 1   (case-sensitive - first "The" is capitalized)
 print(sentence.count("dog"))       # 1
 print(sentence.count("dog", 0, -1))  # 0   (start/end are a slice: final "g" cut off)
+```
 
+#pagebreak()
+
+```python
+# .. contd. 
 # Checking start/end
+
 print(sentence.startswith("The"))  # True
 print(sentence.endswith("dog"))    # True
 print(sentence.startswith("the"))  # False (case-sensitive)
@@ -131,7 +138,7 @@ print(text.replace("aaa", "XXX", 2))
 
 
 = String formatting
-==f-Strings
+== f-Strings
 
 *f-strings* (formatted string literals) embed expressions directly in strings.
 

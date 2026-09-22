@@ -5,4 +5,4 @@ icon:
 ---
 String Methods
 
-str as object · upper/lower/strip · split/join · f-strings · formatting
+str as object · upper/lower/strip · · f-strings · formatting

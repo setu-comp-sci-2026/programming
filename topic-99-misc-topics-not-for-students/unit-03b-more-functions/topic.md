@@ -1,3 +1,3 @@
-# 2b: Functions (Part 2)
+# Wednesday
 
 string methods ·  built-in functions
