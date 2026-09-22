@@ -6,4 +6,4 @@ icon:
 
 # 02: Code Solution
 
-Click on card for Video on the Mini project - Cinema ticket system 
+Video on the Mini project - Cinema ticket system 

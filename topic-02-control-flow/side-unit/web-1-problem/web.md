@@ -6,4 +6,4 @@ icon:
 
 # 01: Problem Solving
 
-Click on card for Video on solving the problem before coding 
+Video on solving the problem before coding 
