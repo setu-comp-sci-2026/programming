@@ -9,7 +9,7 @@ def print_header(title):#
     print(title)
     draw_line()
 
-# print_header("Student Report") # prints ---- Student Report ----
+print_header("Student Report") # prints ---- Student Report ----
 
 # Ex 2
 # def greet(name):
