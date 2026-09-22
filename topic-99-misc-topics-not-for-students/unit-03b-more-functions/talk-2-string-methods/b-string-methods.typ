@@ -10,7 +10,7 @@
   config-info(
     color: rgb("#c6f1c7"),
     title: [Python Programming Fundamentals],
-    subtitle: [String Methods],
+    subtitle: [String Functions and Methods],
     author: [Programming Fundamentals Team],
     date: datetime.today(),
     institution: [SETU],
@@ -69,7 +69,9 @@ print(greeting)         # hello  (unchanged)
 print(upper_greeting)   # HELLO
 ```
 
-= Case and Whitespace Methods
+= String Methods 
+
+== Case conversion and Whitespace Methods
 
 ```python
 text = "  Hello, World!  "
@@ -94,7 +96,7 @@ print("Python123".isalnum())    # True (letters and digits)
 print("  ".isspace())           # True
 ```
 
-= Search and Replace
+== Search and Replace
 
 ```python
 sentence = "The quick brown fox jumps over the lazy dog"
@@ -102,8 +104,9 @@ sentence = "The quick brown fox jumps over the lazy dog"
 # Finding substrings
 print(sentence.find("fox"))        # 16  (index of first match of "fox"- index starts at 0)
 print(sentence.find("cat"))        # -1  (not found)
-print(sentence.count("the"))       # 1   (case-sensitive)
-print(sentence.count("the", 0, -1, ))
+print(sentence.count("the"))       # 1   (case-sensitive - first "The" is capitalized)
+print(sentence.count("dog"))       # 1
+print(sentence.count("dog", 0, -1))  # 0   (start/end are a slice: final "g" cut off)
 
 # Checking start/end
 print(sentence.startswith("The"))  # True
@@ -126,33 +129,9 @@ print(text.replace("aaa", "XXX", 2))
 # "XXX bbb XXX ccc aaa"
 ```
 
-= Split and Join
 
-*`split()`* — break a string into a list of parts:
-
-```python
-csv_line = "Alice,25,Dublin,Engineer"
-parts = csv_line.split(",")
-print(parts)    # ['Alice', '25', 'Dublin', 'Engineer']
-
-sentence = "the quick brown fox"
-words = sentence.split()    # splits on any whitespace
-print(words)    # ['the', 'quick', 'brown', 'fox']
-```
-
-#pagebreak()
-
-*`join()`* — glue a list of strings together:
-
-```python
-words = ["Python", "is", "great"]
-print(" ".join(words))       # Python is great
-print("-".join(words))       # Python-is-great
-print("".join(words))        # Pythonisgreat
-
-```
-
-= f-Strings
+= String formatting
+==f-Strings
 
 *f-strings* (formatted string literals) embed expressions directly in strings.
 
@@ -183,7 +162,7 @@ print(f"{'Right':>10}|")            #      Right |
 print(f"{'Centre':^10}|")           #   Centre   |
 ```
 
-= String Formatting Specifiers
+== String Formatting Specifiers
 
 #table(
   columns: (auto, 1fr, auto),

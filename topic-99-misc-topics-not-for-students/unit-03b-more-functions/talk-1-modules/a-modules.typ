@@ -79,7 +79,7 @@ length = len("Waterford")
 value  = int("42")
 ```
 
-#pause
+#pagebreak()
 
 But most of Python's power lives in the *standard library* — hundreds of modules that ship with Python but are *not* loaded until you ask for them:
 
@@ -148,7 +148,7 @@ print(greeting)
   *NOTE:* `random.randint(1, 100)` includes *both* endpoints — unlike `range(1, 100)`, which stops at 99. Modules will not always behave the way the rest of the language does, so read the documentation.
 ]
 
-== importing individual names: 
+== Importing individual names
 `from module import name`
 
 You can pull individual names *out* of a module, so you use them without the prefix:
@@ -179,7 +179,7 @@ Same result, different style. So which should you use?
   [*Risk*], [None], [Can *clash* with your own names],
 )
 
-#pause
+#pagebreak()
 
 The clash is the real danger:
 
@@ -189,8 +189,7 @@ from math import pi
 pi = 3            # oops — your own variable wins from here on
 print(pi * 4)     # 12, not 12.57
 ```
-
-#pause
+#pagebreak()
 
 #note[
   *House rule for this module:* prefer `import math` and write `math.pi`. It is a few more characters, and anyone reading your code can see instantly where the name came from. Use `from ... import` when you need just one or two names and the source is obvious.
@@ -209,11 +208,9 @@ print(rnd.randint(1, 6))
 #pause
 
 You will see this constantly in data work (`import pandas as pd`). For now, know what it means when you see it — you rarely need it yourself.
+
 = Your Own File Is a Module
 
-This is the part that matters most for your labs.
-
-#pause
 
 Suppose you write `shapes.py`:
 
@@ -221,17 +218,14 @@ Suppose you write `shapes.py`:
 """Functions for calculating areas and perimeters."""
 import math
 
-
 def circle_area(radius):
     """Return the area of a circle with the given radius."""
     return math.pi * radius ** 2
-
 
 def rectangle_area(width, height):
     """Return the area of a rectangle."""
     return width * height
 ```
-
 #pause
 
 Notice: `shapes.py` *itself* imports `math`. Modules import other modules — that is normal.
@@ -257,7 +251,7 @@ print(f"Rect 4x5:    {shapes.rectangle_area(4, 5):.2f}")
 
 #pause
 
-There is nothing special about `math` or `random`. They are files someone else wrote. Yours works exactly the same way.
+There is nothing special about `math` or `random`. They are files someone else wrote. Yours work exactly the same way.
 
 = The Same-Folder Rule
 
@@ -273,19 +267,19 @@ lab03/
 
 Then, in VS Code, run `test_shapes.py`. Python looks for `shapes.py` *beside the file being run*.
 
-#pause
 
+#pagebreak()
 ```
 ModuleNotFoundError: No module named 'shapes'
 ```
 
-Nine times out of ten this means one of:
+Most of the time,  this means one of:
 
 - The two files are in *different* folders
 - The file name is misspelled (`Shapes.py` is not `shapes.py`)
 - You are running the file from the wrong working directory
 
-= A Trap Worth Avoiding
+== A Common Error and how to fix it
 
 Never name your own file after a module you want to use:
 
@@ -302,7 +296,7 @@ lab03/
 import random
 print(random.randint(1, 10))
 ```
-
+#pagebreak()
 ```
 AttributeError: module 'random' has no attribute 'randint'
 ```
@@ -325,18 +319,14 @@ Python found *your* `random.py` first and imported that instead. The same applie
 import random
 
 secret = random.randint(1, 100)
-attempts = 0
+guess = int(input("Guess: "))
 
-while True:
-    guess = int(input("Guess: "))
-    attempts += 1
-    if guess < secret:
-        print("Too low")
-    elif guess > secret:
-        print("Too high")
-    else:
-        print(f"Correct in {attempts} attempts!")
-        break
+if guess < secret:
+    print("Too low")
+elif guess > secret:
+    print("Too high")
+else:
+    print("Correct - well done!")
 ```
 
 #pagebreak()
@@ -348,20 +338,21 @@ while True:
 """Pure functions for the guessing game."""
 import random
 
-
 def get_secret_number():
     """Return a random integer between 1 and 100."""
     return random.randint(1, 100)
 
-
+```
+#pagebreak()
+```python
 def check_guess(secret, guess):
-    """Return 'low', 'high' or 'correct' for the given guess."""
+    """Return 'Too low', 'Too high' or 'Correct' for the given guess."""
     if guess < secret:
-        return "low"
+        return "Too low"
     elif guess > secret:
-        return "high"
+        return "Too high"
     else:
-        return "correct"
+        return "Correct - well done! "
 ```
 
 #pagebreak()
@@ -371,27 +362,17 @@ def check_guess(secret, guess):
 import guess_logic
 
 secret   = guess_logic.get_secret_number()
-attempts = 0
+guess = int(input("Guess: "))
 
-while True:
-    guess = int(input("Guess: "))
-    attempts += 1
-    result = guess_logic.check_guess(secret, guess)
-
-    if result == "low":
-        print("Too low")
-    elif result == "high":
-        print("Too high")
-    else:
-        print(f"Correct in {attempts} attempts!")
-        break
+result = guess_logic.check_guess(secret, guess)
+print(result)
 ```
 
 #pause
 
 `check_guess` is a *pure function* in its own file — easy to read, easy to reuse, and easy to test without ever playing the game.
 
-= One Thing to Watch For
+==  One Thing to Watch For
 
 When you `import` a file, Python *runs* it from top to bottom.
 
@@ -414,12 +395,11 @@ import shapes                  # prints "Loading shapes..."
 
 Definitions are harmless — but stray `print()` calls and `input()` prompts at module level will fire the moment someone imports your file.
 
-#pause
+#pagebreak()
 
 #note[
   *For now:* keep your module files to `import` lines, constants, and `def` blocks. Put the code that *does* things in the file you actually run.
 
-  In *Topic 08* you will meet `if __name__ == "__main__":` — the guard that lets one file be both a runnable program and an importable module.
 ]
 
 = Recap
@@ -443,13 +423,13 @@ Definitions are harmless — but stray `print()` calls and `input()` prompts at 
 - Never name a file after a standard library module
 - Module files should *define*, not *do*
 
-= Over to You
+// = Over to You
 
-Try these before the next lab:
+// Try these before the next lab:
 
-+ Write `physics.py` with the constants `GRAVITY`, `SPEED_OF_LIGHT`, `AIR_DENSITY` and the three functions from Exercise 4. Then write `test_physics.py` that imports it and prints results for a few realistic values.
-+ Write `shapes.py` (Challenge 3) with all five functions, each with a docstring, and a separate `test_shapes.py` that imports `shapes` and checks every function with two sets of inputs.
-+ Open a terminal, type `python3`, then `import shapes` followed by `help(shapes)`. Your docstrings become the documentation.
+// + Write `physics.py` with the constants `GRAVITY`, `SPEED_OF_LIGHT`, `AIR_DENSITY` and the three functions from Exercise 4. Then write `test_physics.py` that imports it and prints results for a few realistic values.
+// + Write `shapes.py` (Challenge 3) with all five functions, each with a docstring, and a separate `test_shapes.py` that imports `shapes` and checks every function with two sets of inputs.
+// + Open a terminal, type `python3`, then `import shapes` followed by `help(shapes)`. Your docstrings become the documentation.
 
 #slide(
     title: none,
