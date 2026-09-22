@@ -29,7 +29,7 @@ weeks:
     assessment:
       name: Assessment 1 
       due: 2026-10-04
-      percentage: 20
+      percentage: 40
       submission: Online (Moodle)
 
   - date: 2026-10-05
@@ -51,10 +51,10 @@ weeks:
     week: ~
     topic: Reading Week
     assessment:
-      name: Assesment 2
-      due: 2026-11-01
-      percentage: 20
-      submission: Online (Moodle)
+      name: Assesment 2 - Handout
+      due: 2025-12-19
+      percentage: 0
+      submission: At end of Module
 
   - date: 2026-11-02
     week: 7
