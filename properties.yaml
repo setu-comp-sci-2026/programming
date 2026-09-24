@@ -1,4 +1,8 @@
 credits        : Programming Fundamentals Team
+slack          : https://setu-comp-sci-26.slack.com
+moodle         : https://moodle.setu.ie/mod/assign/view.php?id=4851642
+youtube        : https://www.youtube.com/playlist?list=PLDsx2ejgjwes
+parent         : course/setu-cert-comp-sci-2026
 icon:
   type: material-icon-theme:python
   color: "3572A5"
