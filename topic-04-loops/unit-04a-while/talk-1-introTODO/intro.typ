@@ -1,6 +1,5 @@
 #import "@preview/touying:0.7.3": *
 #import themes.stargazer: *
-#import "@preview/cetz:0.5.0": canvas, draw
 #import "@preview/numbly:0.1.0": numbly
 
 #let my-logo = image("assets/python.png", width: 1.5cm, height: 1.5cm)
@@ -25,7 +24,7 @@
     date: datetime.today(),
     institution: [SETU],
     logo-position: bottom + right,
-    logo: my-logo
+    logo: my-logo,
   ),
 )
 
@@ -34,22 +33,13 @@
 #set page(
   background: place(left + top, dx: 8.5em, dy: 1em)[#opaque-logo]
 )
-
 #title-slide()
-
 #set page(background: none)
 
-
-// ---------------------------------------------------------
-// SLIDE 1
-// ---------------------------------------------------------
-
 #slide[
-  = Where Are We Now?
+  == Where Are We Now?
 
-  Over the last few weeks, we have been building up our Python toolkit.
-
-  #pause
+  Over the last few weeks, we have been building our Python toolkit.
 
   We can now:
 
@@ -58,23 +48,15 @@
   - make decisions using *selection*
   - organise our code using *functions*
 
-  #pause
-
   #note[
-    We can already write programs that take input, make decisions
-    and produce useful results.
+    We can already write programs that take input, make decisions and produce useful results.
   ]
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 2
-// ---------------------------------------------------------
-
 #slide[
-  = Variables – Remember These?
+  == Variables and Data Types
 
-  Variables allow us to *store information* while our program is running.
+  Variables allow us to store information while our program is running.
 
   ```python
   name = "Charlie"
@@ -83,16 +65,12 @@
   vaccinated = True
   ```
 
-  #pause
-
-  Different values can have different *data types*.
+  We have used different data types:
 
   - `str`
   - `int`
   - `float`
   - `bool`
-
-  #pause
 
   And variables can change:
 
@@ -101,15 +79,10 @@
   ```
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 3
-// ---------------------------------------------------------
-
 #slide[
-  = Selection – Making Decisions
+  == Selection – Making Decisions
 
-  We then learned how our programs can make decisions.
+  We learned how our programs can make decisions.
 
   ```python
   if age < 1:
@@ -120,60 +93,33 @@
       print("Senior dog")
   ```
 
-  #pause
-
   Selection asks a question:
 
-  #align(center)[
-    *Is this condition True or False?*
-  ]
-
-  #pause
+  #align(center)[*Is this condition True or False?*]
 
   The answer determines which code runs.
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 4
-// ---------------------------------------------------------
-
 #slide[
-  = Functions – Organising Our Code
+  == Functions – Organising Our Code
 
   Functions allow us to give a piece of code a job.
 
   ```python
   def calculate_cost(days, daily_price):
-      cost = days*daily_price
+      cost = days * daily_price
       return cost
   ```
-
-  #pause
 
   ```python
   total = calculate_cost(3, 25.0)
   ```
 
-  #pause
-
-  Functions help us:
-
-  - organise our program
-  - avoid unnecessary repetition
-  - reuse code
-  - break a larger problem into smaller problems
+  Functions help us organise and reuse code, and break a larger problem into smaller problems.
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 5
-// ---------------------------------------------------------
-
 #slide[
-  = We Can Already Do Quite A Lot
-
-  Imagine a simple Dog Day Care program.
+  == We Can Already Do Quite a Lot
 
   ```python
   name = input("Dog's name: ")
@@ -185,8 +131,6 @@
       print(name, "is not a puppy")
   ```
 
-  #pause
-
   This program:
 
   - gets input
@@ -194,32 +138,13 @@
   - makes a decision
   - displays a result
 
-  #pause
-
-  *But what happens if we want to do it again?*
+  #note[*But what happens if we want to do it again?*]
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 6
-// ---------------------------------------------------------
-
 #slide[
-  = A New Problem...
+  == A New Problem
 
-  Suppose we want our program to print:
-
-  ```text
-  Welcome!
-  Welcome!
-  Welcome!
-  Welcome!
-  Welcome!
-  ```
-
-  #pause
-
-  We _could_ write:
+  Suppose we want our program to print `Welcome!` five times.
 
   ```python
   print("Welcome!")
@@ -229,18 +154,13 @@
   print("Welcome!")
   ```
 
-  #pause
+  This works — but what if we wanted it *100 times?*
 
-  But what if we wanted it *100 times?*
+  What if we didn't know in advance how many times we needed to repeat something?
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 7
-// ---------------------------------------------------------
-
 #slide[
-  = Or Imagine This...
+  == Another Problem
 
   ```python
   password = input("Enter password: ")
@@ -251,144 +171,73 @@
       print("Incorrect password")
   ```
 
-  #pause
-
-  What happens if the password is wrong?
-
-  #pause
-
-  The program ends.
-
-  #pause
-
-  But what if we want to say:
+  If the password is wrong, the program ends.
 
   #note[
-    Keep asking until the user enters the correct password.
+    What if we want to keep asking until the user enters the correct password?
   ]
 
   We need a way of *repeating code*.
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 8
-// ---------------------------------------------------------
-
 #slide[
-  = Iteration
+  == Iteration
 
   *Iteration* means repeating a set of instructions.
 
-  #pause
-
   We often call this a *loop*.
 
-  #pause
-
-  Instead of writing the same code again and again...
-
-  ```python
-  print("Hello")
-  print("Hello")
-  print("Hello")
-  ```
-
-  ...we can tell Python to repeat it for us.
-
-  #pause
+  Instead of writing the same code again and again, we tell Python to repeat it for us.
 
   #note[
-    Iteration is the third major building block of programming.
+    Iteration is one of the fundamental building blocks of programming.
   ]
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 9
-// ---------------------------------------------------------
-
 #slide[
-  = Three Fundamental Ideas
+  == Three Fundamental Ideas
 
   #align(center)[
-    #text(size: 1.4em, weight: "bold")[
-      Sequence → Selection → Iteration
-    ]
+    #text(size: 1.4em, weight: "bold")[Sequence → Selection → Iteration]
   ]
 
-  #pause
+  *Sequence* — do instructions in order.
 
-  *Sequence*
+  *Selection* — decide which instructions to perform.
 
-  Do instructions in order.
+  *Iteration* — repeat instructions.
 
-  #pause
-
-  *Selection*
-
-  Decide which instructions to perform.
-
-  #pause
-
-  *Iteration*
-
-  Repeat instructions.
-
-  #pause
-
-  These three ideas appear in almost every program we write.
+  These ideas appear again and again in the programs we write.
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 10
-// ---------------------------------------------------------
-
 #slide[
-  = Think About Everyday Life
+  == Iteration in Everyday Life
 
   We use repetition all the time.
-
-  #pause
 
   *Brushing your teeth*
 
   Repeat brushing movements until enough time has passed.
 
-  #pause
-
   *Washing dishes*
 
   While there are dirty dishes, wash another dish.
-
-  #pause
 
   *Taking attendance*
 
   For each student, record whether they are present.
 
-  #pause
-
   Programming works in much the same way.
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 11
-// ---------------------------------------------------------
-
 #slide[
-  = Two Types of Loop
+  == Two Types of Loop
 
   In Python, we will look at two main ways of repeating code.
-
-  #pause
 
   #grid(
     columns: (1fr, 1fr),
     gutter: 2em,
-
     [
       *`while` loop*
 
@@ -396,58 +245,26 @@
 
       ```python
       while condition:
-          repeat this
+          # repeat this
       ```
     ],
-
     [
       *`for` loop*
 
-      Repeat for a collection or sequence of values.
+      Repeat for a sequence of values.
 
       ```python
       for value in sequence:
-          repeat this
+          # repeat this
       ```
-    ]
+    ],
   )
+
+  This session: *`while`*   |   Next session: *`for`*
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 12
-// ---------------------------------------------------------
-
 #slide[
-  = Which Loop?
-
-  Don't worry about choosing between them yet.
-
-  #pause
-
-  A useful starting point is:
-
-  #note[
-    *while* → repeat while something is true
-
-    *for* → repeat for a set of values
-  ]
-
-  #pause
-
-  This week:
-
-  - *Day 1:* `while` loops
-  - *Day 2:* `for` loops
-]
-
-
-// ---------------------------------------------------------
-// SLIDE 13
-// ---------------------------------------------------------
-
-#slide[
-  = Our First `while` Loop
+  == Our First `while` Loop
 
   ```python
   count = 1
@@ -457,11 +274,7 @@
       count = count + 1
   ```
 
-  #pause
-
   What do you think this program will display?
-
-  #pause
 
   ```text
   1
@@ -472,13 +285,8 @@
   ```
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 14
-// ---------------------------------------------------------
-
 #slide[
-  = Look Closely...
+  == We Already Know Most of This
 
   ```python
   count = 1
@@ -488,72 +296,19 @@
       count = count + 1
   ```
 
-  We already understand nearly everything here!
+  `count = 1` → *variable*
 
-  #pause
+  `count <= 5` → *Boolean condition*
 
-  ```python
-  count = 1
-  ```
+  `count = count + 1` → *update a variable*
 
-  *Variable*
-
-  #pause
-
-  ```python
-  count <= 5
-  ```
-
-  *Boolean condition*
-
-  #pause
-
-  ```python
-  count = count + 1
-  ```
-
-  *Updating a variable*
+  #note[
+    The new idea is that Python keeps checking the condition and repeating the indented code while it remains `True`.
+  ]
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 15
-// ---------------------------------------------------------
-
 #slide[
-  = The New Bit
-
-  The only really new idea is:
-
-  ```python
-  while count <= 5:
-  ```
-
-  #pause
-
-  Python checks the condition.
-
-  If it is `True`:
-
-  - run the indented code
-  - go back
-  - check the condition again
-
-  #pause
-
-  If it is `False`:
-
-  - leave the loop
-  - continue with the rest of the program
-]
-
-
-// ---------------------------------------------------------
-// SLIDE 16
-// ---------------------------------------------------------
-
-#slide[
-  = Trace It
+  == Trace the Loop
 
   ```python
   count = 1
@@ -562,8 +317,6 @@
       print(count)
       count = count + 1
   ```
-
-  #pause
 
   #table(
     columns: (1fr, 1fr, 1fr),
@@ -577,13 +330,8 @@
   )
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 17
-// ---------------------------------------------------------
-
 #slide[
-  = What Could Possibly Go Wrong?
+  == What Could Go Wrong?
 
   Look carefully at this:
 
@@ -594,68 +342,21 @@
       print(count)
   ```
 
-  #pause
+  `count` starts at `1` and never changes.
 
-  What will happen?
+  The condition therefore remains `True`.
 
-  #pause
-
-  `count` starts at `1`.
-
-  `count <= 5` is `True`.
-
-  But...
-
-  #pause
-
-  *count never changes!*
-]
-
-
-// ---------------------------------------------------------
-// SLIDE 18
-// ---------------------------------------------------------
-
-#slide[
-  = Infinite Loops
-
-  The previous program will keep printing:
-
-  ```text
-  1
-  1
-  1
-  1
-  1
-  ...
-  ```
-
-  #pause
-
-  This is called an *infinite loop*.
-
-  #pause
+  The program keeps printing `1` forever.
 
   #note[
-    When using a `while` loop, always ask:
+    This is an *infinite loop*.
 
-    *What will eventually make my condition False?*
+    Always ask: *What will eventually make my condition False?*
   ]
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 19
-// ---------------------------------------------------------
-
 #slide[
-  = Bringing Our Skills Together
-
-  Iteration doesn't replace anything we have learned.
-
-  It works *with* it.
-
-  #pause
+  == Bringing Our Skills Together
 
   ```python
   def check_age(age):
@@ -669,33 +370,14 @@
   while again == "yes":
       age = int(input("Enter age: "))
       print(check_age(age))
-
       again = input("Go again? yes/no: ")
   ```
 
-  #pause
-
-  Can you spot:
-
-  - a variable?
-  - selection?
-  - a function?
-  - a parameter?
-  - a return value?
-  - iteration?
+  Can you spot the variables, selection, function, parameter, return value and iteration?
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 20
-// ---------------------------------------------------------
-
 #slide[
-  = Our Programming Toolkit
-
-  We now have four very powerful tools.
-
-  #pause
+  == Our Programming Toolkit
 
   #table(
     columns: (1fr, 2fr),
@@ -706,34 +388,25 @@
     [Iteration], [Repeat code],
   )
 
-  #pause
-
   #note[
     The real power comes from combining them.
   ]
 ]
 
-
-// ---------------------------------------------------------
-// SLIDE 21
-// ---------------------------------------------------------
-
 #slide[
-  = Today's Focus
+  == Today's Focus – `while`
 
-  Today we are going to learn how to use `while` loops to:
+  Today we are going to learn how to:
 
-  - repeat code while a condition is true
+  - repeat code while a condition is `True`
   - use a counter
   - update variables inside a loop
   - repeat user input
-  - use selection inside a loop
+  - combine selection and iteration
   - avoid infinite loops
   - trace a loop by hand
 
-  #pause
-
-  By the end, you should be able to look at a `while` loop and
-  explain *exactly why it stops*.
+  #note[
+    By the end, you should be able to look at a `while` loop and explain exactly why it repeats and why it stops.
+  ]
 ]
-
