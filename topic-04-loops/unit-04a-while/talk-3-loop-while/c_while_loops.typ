@@ -148,7 +148,6 @@ while count <= 3:
     print(count)
     count += 1
 ```
-
 #table(
   columns: (1fr, 1fr, 1fr),
   inset: .6em,
@@ -318,7 +317,7 @@ while mark < 0 or mark > 100:
 print("Accepted")
 ```
 
-This uses `or`, which students have already met.
+This uses `or`, could we have used 'and'?
 
 == Validating a positive number
 
@@ -358,8 +357,6 @@ while mark < 0 and mark > 100:
 Hint: think about `and` versus `or`.
 
 == Activity: Solution
-
-This code accepts invalid marks. Why?
 
 ```python
 mark = int(input("Mark: "))
