@@ -5,4 +5,4 @@ icon:
 ---
 # 04: Iteration — Loops
 
-for loops · while loops · range · variable scope · break · continue · nested loops
+for · while · range  · break · continue · nested loops
