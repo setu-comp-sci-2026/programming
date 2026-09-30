@@ -143,14 +143,13 @@ while count <= 5:  # test
 
 ```python
 count = 1
-
 while count <= 3:
     print(count)
     count += 1
 ```
 #table(
   columns: (1fr, 1fr, 1fr),
-  inset: .6em,
+  inset: .5em,
   align: center,
   [*count*], [*condition*], [*output*],
   [1], [True], [1],

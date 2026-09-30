@@ -57,7 +57,7 @@
 == What if we needed to repeat this?
 
 #grid(columns: (1.1fr, .9fr), gutter: 1em)[
-[
+
 Without loops, repeated tasks quickly become messy:
 
 ```python
@@ -68,7 +68,7 @@ print("Welcome")
 ```
 
 A loop lets us write the repeated instruction once.
-],
+
 #rect(fill: pale, inset: 1em, radius: 8pt)[
 *Key idea*
 

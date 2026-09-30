@@ -66,14 +66,12 @@
   ```
 
   We have used different data types:
-
   - `str`
   - `int`
   - `float`
   - `bool`
 
   And variables can change:
-
   ```python
   age = age + 1
   ```
