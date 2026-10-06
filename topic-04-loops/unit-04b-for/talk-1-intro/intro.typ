@@ -247,6 +247,25 @@
 ]
 
 #slide[
+  == Validation
+
+  If we want to ensure a user enters a whole positive number
+
+  ```python
+    age_input = input("Enter your age: ")
+
+    while not age_input.isdigit():
+        print("Please enter a whole number.")
+        age_input = input("Enter your age: ")
+
+    age = int(age_input)
+
+    print("Your age is", age)
+  ```
+
+]
+
+#slide[
   == Bringing Everything Together
 
   ```python
