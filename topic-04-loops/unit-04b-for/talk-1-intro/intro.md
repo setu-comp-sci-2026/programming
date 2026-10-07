@@ -1,7 +1,7 @@
 ---
 icon:
-  type: carbon:for-loop
+  type: grommet-icons:overview
   color: purple
 ---
-Introduction to for loops
+Introduction
 
