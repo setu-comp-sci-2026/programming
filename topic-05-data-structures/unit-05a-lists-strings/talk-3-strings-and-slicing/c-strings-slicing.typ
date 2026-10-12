@@ -81,7 +81,9 @@ print(numbers[-2:])#[50, 60]
 
 #pause
 
-Remember: the stop position is not included.
+Remember: the stop position is not included when using :n
+
+However , the start position is included when using n:
 
 = Slicing Strings
 
