@@ -56,11 +56,7 @@ student = ["Ava", 19, "Computing", 82]
 
 But what does each position mean?
 
-```python
-print(student[2])
-```
 
-Is that course? County? Email?
 
 = Dictionaries Use Keys
 
@@ -77,10 +73,9 @@ student = {
 
 #pause
 
-This is much easier to read.
-
+To access a value, we use its key:
 ```python
-print(student["course"])
+print(student["course"]) # Computing
 ```
 
 = Records

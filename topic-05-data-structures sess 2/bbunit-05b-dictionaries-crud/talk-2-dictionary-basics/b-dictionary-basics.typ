@@ -65,9 +65,8 @@ key: value
 = Accessing Values
 
 ```python
-print(movie["title"]) # Jaws
-print(movie["year"]) # 1975
-print(movie["rating"]) # 5  
+print(movie["title"])
+print(movie["year"])
 ```
 
 #pause
@@ -75,7 +74,7 @@ print(movie["rating"]) # 5
 If the key does not exist, Python raises a `KeyError`.
 
 ```python
-print(movie["director"]) # KeyError
+print(movie["director"])
 ```
 
 = Safer Access with get()
@@ -83,26 +82,24 @@ print(movie["director"]) # KeyError
 ```python
 movie = {"title": "Jaws", "year": 1975}
 
-print(movie.get("title")) # Jaws    
-print(movie.get("title", "Unknown Title")) # Jaws
-
-print(movie.get("director")) # None
-print(movie.get("director", "Unknown director"))# Unknown director
+print(movie.get("title"))
+print(movie.get("director"))
+print(movie.get("director", "Unknown"))
 ```
 
 #pause
 
-`get()` is useful when a key might not exist because it will return `None` or a default value instead of raising an error.
+`get()` is useful when a key might not exist.
 
 = Adding and Updating
 
 ```python
 movie = {"title": "Jaws", "year": 1975}
 
-movie["rating"] = 5 # Add a new key-value pair
-movie["year"] = 1976 # Update an existing key
+movie["rating"] = 5
+movie["year"] = 1976
 
-print(movie) # {'title': 'Jaws', 'year': 1976, 'rating': 5}
+print(movie)
 ```
 
 #pause
@@ -118,21 +115,18 @@ student = {
     "course": "Computing"
 }
 
-
-print(student.keys()) #dict_keys(['name', 'age', 'course', 'mark'])
-print(student.values()) #dict_values(['Ava', 19, 'Computing', 85])
-print(student.items()) # dict_items([('name', 'Ava'), ('age', 19), ('course', 'Computing'), ('mark', 85)])```
+print(student.keys())
+print(student.values())
+print(student.items())
+```
 
 #pause
 
-== Looping over key-value pairs:
+Looping over key-value pairs:
 
 ```python
 for key, value in student.items():
-    print(key, value) # name Ava
-                      #age 19
-                      #course Computing
-                      #mark 82
+    print(key, value)
 ```
 #slide(
     title: none,
