@@ -65,6 +65,9 @@ The list stores the collection.
 ```python
 for movie in movies:
     print(movie["title"], movie["year"])
+      #Jaws 1975
+      #Alien 1979
+      #Shrek 2001
 ```
 
 #pause
@@ -74,6 +77,10 @@ Formatted output:
 ```python
 for movie in movies:
     print(f"{movie['title']} ({movie['year']})")
+    # Shrek 2001
+    # Jaws (1975)
+    # Alien (1979)
+    # Shrek (2001)
 ```
 
 = Searching
@@ -84,14 +91,17 @@ search_title = input("Enter title: ")
 for movie in movies:
     if movie["title"].lower() == search_title.lower():
         print("Found:", movie)
+
+        # e.g. input: Shrek
+        # output: Found: {'title': 'Shrek', 'year': 2001, 'rating': 4}
 ```
 
 #pause
 
-Important idea:
+Important ideas:
 
 - loop through each record
-- check one field
+- check one field (make both search_title and movie["title"] lowercase for case-insensitive comparison)
 - display the matching record
 
 = Filtering
@@ -100,6 +110,8 @@ Important idea:
 for movie in movies:
     if movie["rating"] >= 5:
         print(movie["title"])
+                # output: Jaws
+                # output: Alien
 ```
 
 #pause
@@ -115,12 +127,25 @@ new_movie = {
     "rating": int(input("Rating: "))
 }
 
-movies.append(new_movie)
+movies.append(new_movie) # add the new record
+```
+
+#pagebreak()
+```python 
+# continued from above
+# test by printing the list of movies again
+for movie in movies:
+    print(movie["title"], movie["year"])
+    #assume I entered "Odessey" for title, 2026 for year, and 5 for rating
+    # output: Shrek 2001
+    # output: Jaws 1975
+    # output: Alien 1979
+    # output: Odessey 2026 
 ```
 
 #pause
 
-This is the Create step in CRUD.
+This is an example of the Create step in CRUD.
 #slide(
     title: none,
     header: none,
