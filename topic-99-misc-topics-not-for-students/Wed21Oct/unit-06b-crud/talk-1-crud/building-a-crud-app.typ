@@ -34,7 +34,7 @@
   #align(center)[#text(size: 1.4em, weight: "bold")[Create — Read — Update — Delete]]
 ]
 
-#slide(title: [Our Running Example])[
+#slide(title: [Our Dog Day Care Example])[
   We will build a small *Dog Day Care Manager*.
   ```python
   dogs = [
