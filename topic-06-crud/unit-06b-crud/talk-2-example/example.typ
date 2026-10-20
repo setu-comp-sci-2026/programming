@@ -176,7 +176,7 @@
 #slide(title: [Quick Class Activity])[
   A user says: *"The screen is blank."*
 
-  With a partner, write:
+  Write:
 
   1. *Two questions* you would ask
   2. *Two recommendations* you might give
@@ -186,6 +186,86 @@
 
   Then consider: Which parts are *data*? Which part is the *decision*?
 ]
+#slide(title: [Class Activity: One Possible Answer])[
+  A user tells us: *"The screen is blank."*
+
+  *Two questions we could ask:*
+  + Is the monitor switched on?
+  + Is the monitor cable connected properly?
+
+  *Two recommendations we could give:*
+  + Switch on the monitor and check its power connection.
+  + Check that the cable between the monitor and computer is secure.
+
+  #note[There are several valid answers. The important thing is to ask useful questions and suggest relevant advice.]
+]
+
+#slide(title: [Connecting a Question to a Recommendation])[
+  *Our first IF/THEN rule:*
+
+  #note[*IF* the monitor is not switched on, *THEN* recommend switching it on.]
+
+  The rule connects three things:
+  - *Question:* Is the monitor switched on?
+  - *Answer:* No
+  - *Recommendation:* Switch on the monitor.
+
+  *Would we give the same recommendation if the answer was "Yes"?*
+]
+
+#slide(title: [Representing the Questions and Advice as Data])[
+  We can use the dictionaries and lists we already know:
+
+  ```python
+  questions = [
+      {"id": 1, "text": "Is the monitor switched on?"},
+      {"id": 2, "text": "Is the monitor cable connected?"}
+  ]
+
+  recommendations = [
+      {"id": 1, "text": "Switch on the monitor"},
+      {"id": 2, "text": "Check the monitor cable"}
+  ]
+  ```
+
+  Each *ID* gives us a way to refer to a particular question or recommendation.
+]
+
+#slide(title: [Representing Our Rule as Data])[
+  Our rule can also be a dictionary:
+
+  ```python
+  rule = {
+      "question_id": 1,
+      "expected_answer": "no",
+      "recommendation_id": 1
+  }
+  ```
+
+
+  IF the answer to *question 1* is *"no"*, THEN suggest *recommendation 1*.
+
+  #note[We are only storing the rule today. We will write code to check rules later.]
+]
+
+#slide(title: [What If the Screen Is Still Blank?])[
+  Suppose the user answers:
+
+  *"Yes, the monitor is switched on — but the screen is still blank."*
+
+  Our first rule doesn't help. We need more evidence.
+
+  - Is the monitor cable connected?
+  - Is the computer itself switched on?
+  - Is the monitor set to the correct input?
+
+  #pause
+
+  *Looking ahead:* A more useful rule may need to check *several answers together*.
+
+  #note[Questions gather evidence. Rules use the evidence. Recommendations provide advice.]
+]
+
 
 #slide(title: [The Bigger Picture])[
   Over the coming weeks, we'll develop our PC Troubleshooter step by step.

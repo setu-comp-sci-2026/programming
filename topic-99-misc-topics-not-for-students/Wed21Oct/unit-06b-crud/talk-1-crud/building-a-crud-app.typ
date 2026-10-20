@@ -34,6 +34,26 @@
   #align(center)[#text(size: 1.4em, weight: "bold")[Create — Read — Update — Delete]]
 ]
 
+#slide(title: [Our Week 6 Project: Dog Day Care Manager])[
+#grid(
+  columns: (1fr, 1fr, 1fr),
+  gutter: 15pt,
+  image("assets/dog1.png", width: 75%),
+  image("assets/dog2.png", width: 75%),
+  image("assets/dog3.png", width: 75%),
+)
+  Imagine you work at a *Dog Day Care Centre*. Staff need a simple program to keep track of the dogs attending.
+
+  Each dog has an *ID, name, breed and age*.
+
+  Our program will let us *add, view, find, update and delete* dog records.
+
+  #block(fill: rgb("#eaf4ef"), radius: 7pt, inset: 12pt)[
+    *The programming goal:* practise CRUD using *lists of dictionaries, functions and a menu*.
+  ]
+]
+
+
 #slide(title: [Our Dog Day Care Example])[
   We will build a small *Dog Day Care Manager*.
   ```python
@@ -73,7 +93,8 @@
 
 #slide(title: [Using `None`])[
   ```python
-  dog = find_dog(dogs, 2)
+  dog_id = int(input("Enter the dog id: "))
+  dog = find_dog(dogs, dog_id)
 
   if dog is not None:
       print(dog["name"])
