@@ -81,7 +81,7 @@
 
   #pause
 
-  *Discuss:* Why is "My computer isn't working" not enough information?
+  *Question:* Why is "My computer isn't working" not enough information?
 ]
 
 #slide(title: [Why Do We Need Questions?])[
