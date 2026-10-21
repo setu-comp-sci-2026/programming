@@ -1,4 +1,4 @@
-# 6b: Wednesday - Part 2
+# 6c: Wednesday - Part 2
 
 
 
