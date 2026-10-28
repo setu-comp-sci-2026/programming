@@ -1,0 +1,37 @@
+{
+    "questions": [
+        {
+            "key": "power_on",
+            "text": "Does the computer turn on?"
+        },
+        {
+            "key": "display_on",
+            "text": "Does the monitor show an image?"
+        }
+    ],
+    "rules": [
+        {
+            "when": {
+                "power_on": "no"
+            },
+            "advice": "Check the power cable and socket.",
+            "reason": "The computer is not powering on."
+        },
+        {
+            "when": {
+                "power_on": "yes",
+                "display_on": "no"
+            },
+            "advice": "Check the monitor connection and display settings.",
+            "reason": "The computer powers on but there is no display."
+        },
+        {
+            "when": {
+                "power_on": "yes",
+                "display_on": "yes"
+            },
+            "advice": "Try a restart and check the specific symptoms.",
+            "reason": "Power and display both appear to work."
+        }
+    ]
+}
