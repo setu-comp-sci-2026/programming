@@ -1,65 +1,86 @@
 #import "@preview/touying:0.7.3": *
 #import themes.stargazer: *
-#let note(body) = block(fill: rgb("#eaf4ef"), stroke: (paint: rgb("#77a98d"), thickness: 1pt), radius: 7pt, inset: 12pt, width: 100%, body)
+
+#let note(body) = block(
+  fill: rgb("#eaf4ef"),
+  stroke: (paint: rgb("#77a98d"), thickness: 1pt),
+  radius: 7pt,
+  inset: 12pt,
+  width: 100%,
+  body,
+)
+
 #show: stargazer-theme.with(
   aspect-ratio: "16-9",
-  config-info(color: rgb("#c6f1c7"), title: [Programming Fundamentals], subtitle: [Week 7 — Monday: Files and Persistence], author: [Programming Fundamentals Team], institution: [SETU], date: datetime.today()),
+  config-info(
+    color: rgb("#c6f1c7"),
+    title: [Programming Fundamentals],
+    subtitle: [Week 7 — Monday: Persistence, Files and Input Validation],
+    author: [Programming Fundamentals Team],
+    institution: [SETU],
+    date: datetime.today(),
+  ),
 )
 #set text(size: 20pt)
 #title-slide()
 
-#slide(title: [Today: Make Data Survive])[
-*Learning goals:* explain persistence; read, write and append text; use `with open()`; recognise JSON; save and load a Python collection.
+#slide(title: [Today: Trust the Input, Keep the Data])[
+  By the end of the class you should be able to:
+  - explain why programs need *persistence*
+  - save and retrieve data using text files and JSON
+  - validate input using `if` statements and loops
+  - combine both ideas in a small application
 
 
 ]
 
-#slide(title: [Remember Our CRUD Program])[
-Our Dog Day Care list lived in memory:
-```python
-dogs = [{"id": 1, "name": "Buddy", "age": 4}]
-```
-Close the program and start it again. *What happens to a dog we added?*
+#slide(title: [Our Dog Day Care Problem])[
+  ```python
+  dogs = [{"name": "Buddy", "age": 4}]
+  dogs.append({"name": "Luna", "age": 2})
+  ```
 
-#pause
-The list is recreated from the code. New records are lost.
+  Two questions:
+  - What happens to Luna when we close the program?
+  - What happens if someone enters an age of `-3`?
+
+  #pause
+  We need *persistence* and *validation*.
 ]
 
-#slide(title: [What Is Persistence?])[
-*Persistence* means keeping information after a program finishes.
+#slide(title: [Persistence: Data That Survives])[
+  *Persistence* means keeping information after the program stops.
 
-*Memory (RAM):* temporary data while a program runs.
+  - A Python list exists in memory while the program runs.
+  - A file stores information so we can retrieve it later.
+  - A typical program *loads* saved data, changes it, then *saves* it.
 
-*File:* data saved on storage, available next time.
-
-#note[Think: a shopping list, game progress, or saved preferences.]
 ]
 
-#slide(title: [A File Is Not a Python Variable])[
-A text file stores *characters*. A Python variable can hold a string, number, list or dictionary.
+#slide(title: [Write to a Text File])[
+  ```python
+  with open("notes.txt", "w", encoding="utf-8") as file:
+      file.write("First note\n")
+  ```
 
-We must decide *how* to represent our data when saving it.
+  - `open()` opens a file.
+  - `"w"` creates or *overwrites* it.
+  - `with` closes it automatically.
 
-Today: plain text first, then JSON for structured data.
+  *Predict:* What happens if we run the code twice?
 ]
 
-#slide(title: [Write Your First File])[
-```python
-with open("message.txt", "w", encoding="utf-8") as file:
-    file.write("Hello from Python!\n")
-```
+#slide(title: [Why Use `with open()`?])[
+  ```python
+  with open("notes.txt", "w", encoding="utf-8") as file:
+      file.write("Remember to save!\n")
+  ```
 
-Run this in your project folder. Open `message.txt` and check its contents.
+  - `with` manages the file for us.
+  - The file is closed automatically when the block finishes.
+  - The *indented block* shows where the file is being used.
 
-*Predict:* what happens if we run it again?
-]
-
-#slide(title: [Why Use `with`?])[
-`open()` gives us a file object.
-
-`with` automatically closes the file when we leave the block, including if an error occurs.
-
-*Indentation matters:* file operations belong inside the `with` block.
+  * Why is closing a file important?*
 ]
 
 #slide(title: [Three Useful File Modes])[
@@ -70,122 +91,256 @@ Run this in your project folder. Open `message.txt` and check its contents.
 #note[Warning: `"w"` replaces the old contents. It does not add to them.]
 ]
 
-#slide(title: [Prediction: Write or Append?])[
-```python
-with open("notes.txt", "w") as f:
-    f.write("First\n")
-with open("notes.txt", "a") as f:
-    f.write("Second\n")
-```
+#slide(title: [Append Without Erasing])[
+  ```python
+  with open("notes.txt", "a", encoding="utf-8") as file:
+      file.write("Another note\n")
+  ```
 
-*Poll:* what lines are in `notes.txt` now?
+  `"a"` adds to the end of the file.
 
-#pause
-Answer: `First` and `Second`.
+  #pause
+  *Quick check:* Which mode would you use for a running journal: `"w"` or `"a"`?
 ]
 
-#slide(title: [Read a Whole Text File])[
-```python
-with open("notes.txt", "r", encoding="utf-8") as file:
-    contents = file.read()
-print(contents)
-```
+#slide(title: [Read Back What We Saved])[
+  ```python
+  with open("notes.txt", "r", encoding="utf-8") as file:
+      for line in file:
+          print(line.strip())
+  ```
 
-`read()` returns a *string*. The file must already exist.
-]
+  - `"r"` reads an existing file.
+  - The loop processes one line at a time.
+  - `strip()` removes the newline when displaying it.
 
-#slide(title: [Read One Line at a Time])[
-```python
-with open("notes.txt", "r", encoding="utf-8") as file:
-    for line in file:
-        print(line.strip())
-```
-
-`strip()` removes the trailing newline for cleaner printing.
-
-*Discuss:* why might a loop be useful for a long file?
-]
-
-#slide(title: [Live Coding: A Simple Journal])[
-Build a menu with two choices: *add a note* and *view notes*.
-
-Pseudocode:
-```text
-ASK user for a note
-APPEND the note to journal.txt
-OPEN journal.txt for reading
-DISPLAY each saved line
-```
-
+  #note[The file must exist. File-not-found errors and exception handling are covered in Week 8.]
 ]
 
 #slide(title: [What If the File Does Not Exist?])[
-```python
-try:
-    with open("journal.txt", "r") as file:
-        print(file.read())
-except FileNotFoundError:
-    print("No journal entries yet")
-```
+  ```python
+  with open("missing.txt", "r", encoding="utf-8") as file:
+      print(file.read())
+  ```
 
-A friendly message is better than a crash. We will study exceptions in more detail later.
-]
+  If `missing.txt` does not exist, Python raises `FileNotFoundError`.
 
-#slide(title: [Activity: Predict, Run, Explain])[
-1. Write `"Monday"` using `"w"`.
-2. Append `"Wednesday"` using `"a"`.
-3. Read and display both lines.
-4. Change the append mode to write mode and run again.
+  - Reading (`"r"`) needs an existing file.
+  - Writing (`"w"`) or appending (`"a"`) can create one.
 
-*Why did the result change?*
 
 ]
 
-#slide(title: [But What About Dictionaries?])[
-Our Dog Day Care data is structured:
-```python
-dogs = [
-    {"id": 1, "name": "Buddy", "age": 4},
-    {"id": 2, "name": "Luna", "age": 2}
-]
-```
+#slide(title: [Activity 1 — Make a Journal])[
+  *Quick code along*
 
-We want to keep the *list of dictionaries*, not just print them as text.
+  1. Ask for one note and append it to `journal.txt`.
+  2. Read the file and display the notes.
+  3. Run the program twice: do earlier notes remain?
+
+ 
 ]
 
-#slide(title: [Meet JSON])[
-*JSON* stands for JavaScript Object Notation. It is a widely used text format for structured data.
+#slide(title: [Journal — Let's Write the Code])[
+  *Code along - Solution*
 
-Python list → JSON array
+  ```python
+  note = input("Enter a journal note: ")
 
-Python dictionary → JSON object
+  with open("journal.txt", "a", encoding="utf-8") as file:
+      file.write(note + "\n")
 
-#note[JSON is a file format, not a database or a Python class.]
+  print("\nYour journal:")
+  with open("journal.txt", "r", encoding="utf-8") as file:
+      print(file.read())
+  ```
+
+  *Predict:* What does `"a"` do? Why do we add `"\\n"`?
 ]
 
-#slide(title: [Save a List as JSON])[
-```python
-import json
+#slide(title: [Journal — Run It Twice!])[
+  *First run:*
+  ```text
+  Enter a journal note: Learned about files
 
-with open("dogs.json", "w", encoding="utf-8") as file:
-    json.dump(dogs, file, indent=4)
-```
+  Your journal:
+  Learned about files
+  ```
 
-`dump()` writes Python data as JSON. `indent=4` makes the file easier to read.
+  *Second run:*
+  ```text
+  Enter a journal note: Practised Python
+
+  Your journal:
+  Learned about files
+  Practised Python
+  ```
 ]
 
-#slide(title: [Load JSON Back into Python])[
-```python
-import json
+#slide(title: [Why Plain Text Is Not Always Enough])[
+  Our dog records contain *several related values*:
 
-with open("dogs.json", "r", encoding="utf-8") as file:
-    dogs = json.load(file)
+  ```python
+  dogs = [
+      {"name": "Buddy", "age": 4},
+      {"name": "Luna", "age": 2}
+  ]
+  ```
 
-print(dogs[0]["name"])
-```
+  How can we save the *list of dictionaries* and load it again?
 
-`load()` reads JSON and builds Python lists/dictionaries.
+  #pause
+  Use *JSON* — a text format for structured data.
 ]
+
+#slide(title: [Saving Structured Data with JSON])[
+  ```python
+  import json
+
+  with open("dogs.json", "w", encoding="utf-8") as file:
+      json.dump(dogs, file, indent=4)
+  ```
+
+  `json.dump()` writes our list of dictionaries to a file.
+
+  `indent=4` makes the saved file readable.
+]
+
+#slide(title: [Loading Structured Data with JSON])[
+  ```python
+  import json
+
+  with open("dogs.json", "r", encoding="utf-8") as file:
+      dogs = json.load(file)
+
+  print(dogs[0]["name"])
+  ```
+
+  `json.load()` gives us a Python list or dictionary again.
+
+
+]
+
+#slide(title: [The Load → Change → Save Pattern])[
+  ```text
+  START PROGRAM
+      LOAD saved records
+      DISPLAY menu
+      GET user input
+      CHANGE records in memory
+      SAVE updated records
+  END PROGRAM
+  ```
+
+  * Why must we save *after* making a change?*
+]
+
+#slide(title: [Input Is Not Always Valid])[
+  ```python
+  age = int(input("Enter the dog's age: "))
+  ```
+
+  What if the user enters:
+  - `-4`?
+  - `1000`?
+  - `hello`?
+
+  The first two can be rejected with *conditions*.
+
+  #note[Non-numeric input raises ValueError. We'll learn how to handle that with try/except in Week 8.]
+]
+
+#slide(title: [Validation: Check Before Accepting])[
+  *Input validation* checks whether a value meets our rules.
+
+  ```python
+  age = int(input("Age (0 to 25): "))
+
+  if 0 <= age <= 25:
+      print("Age accepted")
+  else:
+      print("Age must be between 0 and 25")
+  ```
+
+  *Question:* Does this let the user try again?
+]
+
+#slide(title: [Keep Asking Until It Is Valid])[
+  ```python
+  age = int(input("Age (0 to 25): "))
+
+  while age < 0 or age > 25:
+      print("Please enter an age from 0 to 25")
+      age = int(input("Age (0 to 25): "))
+
+  print("Accepted:", age)
+  ```
+
+  The loop repeats while the age is *outside* our range.
+
+  #note[This assumes numeric input. Handling letters is a separate Week 8 topic.]
+]
+
+#slide(title: [Prediction: Will the Loop Run?])[
+  ```python
+  while age < 0 or age > 25:
+      age = int(input("Try again: "))
+  ```
+
+  What happens when `age` is:
+  - `-1`?
+  - `12`?
+  - `26`?
+
+  #pause
+  *Discuss:* Why is `or` correct here, rather than `and`?
+]
+
+#slide(title: [Validate a Menu Choice])[
+  ```python
+  choice = input("Choose A, V or Q: ").strip().upper()
+
+  while choice not in ["A", "V", "Q"]:
+      print("Invalid choice")
+      choice = input("Choose A, V or Q: ").strip().upper()
+  ```
+
+  `strip()` removes extra spaces.
+
+  `upper()` allows lowercase input.
+
+
+]
+
+#slide(title: [Put Validation in a Function])[
+  ```python
+  def get_menu_choice():
+      choice = input("A=Add, V=View, Q=Quit: ").strip().upper()
+      while choice not in ["A", "V", "Q"]:
+          print("Please enter A, V or Q")
+          choice = input("A=Add, V=View, Q=Quit: ").strip().upper()
+      return choice
+  ```
+
+  *Why is a function better than repeating this code throughout a program?*
+]
+
+#slide(title: [Validate Before Saving])[
+  ```python
+  name = input("Dog's name: ").strip()
+  while name == "":
+      name = input("Name cannot be blank. Try again: ").strip()
+
+  age = int(input("Age (0 to 25): "))
+  while age < 0 or age > 25:
+      age = int(input("Enter an age from 0 to 25: "))
+
+  dogs.append({"name": name, "age": age})
+  ```
+
+  *Key idea:* Check data *before* adding it to the list or saving the file.
+]
+
 
 #slide(title: [Check Your Understanding])[
 *Quick questions:*
@@ -196,8 +351,10 @@ print(dogs[0]["name"])
 - What happens if you read a file that does not exist?
 ]
 
-#slide(title: [Wednesday])[
+#slide(title: [Before Wednesday])[
+  *Today:* We made data survive and checked it before saving.
 
+  *Wednesday:* We'll use JSON to store the *PC Troubleshooter's* questions and rules outside the Python program.
 
-On Wednesday we will use JSON to give our *PC Troubleshooter* a memory: its knowledge will live in a file, not just in Python code.
+  *Next week:* Debugging and exception handling — including what to do when a user enters letters instead of a number, or a file cannot be opened.
 ]
