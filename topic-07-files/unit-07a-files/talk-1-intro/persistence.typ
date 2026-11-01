@@ -15,24 +15,23 @@
   config-info(
     color: rgb("#c6f1c7"),
     title: [Programming Fundamentals],
-    subtitle: [Week 7 — Monday: Persistence, Files and Input Validation],
+    subtitle: [Persistence, Files and Input Validation],
     author: [Programming Fundamentals Team],
     institution: [SETU],
     date: datetime.today(),
   ),
 )
-#set text(size: 20pt)
+
+
 #title-slide()
+#set page(background: none)
+#outline-slide()
 
-#slide(title: [Today: Trust the Input, Keep the Data])[
-  By the end of the class you should be able to:
-  - explain why programs need *persistence*
-  - save and retrieve data using text files and JSON
-  - validate input using `if` statements and loops
-  - combine both ideas in a small application
+= Trust the Input, Keep the Data
 
 
-]
+
+
 
 #slide(title: [Our Dog Day Care Problem])[
   ```python
@@ -47,17 +46,18 @@
   #pause
   We need *persistence* and *validation*.
 ]
+= Persistence: Data That Survives
 
-#slide(title: [Persistence: Data That Survives])[
   *Persistence* means keeping information after the program stops.
 
   - A Python list exists in memory while the program runs.
   - A file stores information so we can retrieve it later.
   - A typical program *loads* saved data, changes it, then *saves* it.
 
-]
 
-#slide(title: [Write to a Text File])[
+
+== Write to a text file
+
   ```python
   with open("notes.txt", "w", encoding="utf-8") as file:
       file.write("First note\n")
@@ -68,9 +68,9 @@
   - `with` closes it automatically.
 
   *Predict:* What happens if we run the code twice?
-]
 
-#slide(title: [Why Use `with open()`?])[
+
+== Why Use `with open()`?
   ```python
   with open("notes.txt", "w", encoding="utf-8") as file:
       file.write("Remember to save!\n")
@@ -81,17 +81,17 @@
   - The *indented block* shows where the file is being used.
 
   * Why is closing a file important?*
-]
 
-#slide(title: [Three Useful File Modes])[
+
+== Three Useful File Modes
 - `"w"` — *write*: create or overwrite a file
 - `"a"` — *append*: add to the end
 - `"r"` — *read*: open an existing file
+ #pause
 
 #note[Warning: `"w"` replaces the old contents. It does not add to them.]
-]
 
-#slide(title: [Append Without Erasing])[
+== Append Without Erasing
   ```python
   with open("notes.txt", "a", encoding="utf-8") as file:
       file.write("Another note\n")
@@ -101,9 +101,9 @@
 
   #pause
   *Quick check:* Which mode would you use for a running journal: `"w"` or `"a"`?
-]
 
-#slide(title: [Read Back What We Saved])[
+
+== Read Back What We Saved
   ```python
   with open("notes.txt", "r", encoding="utf-8") as file:
       for line in file:
@@ -114,10 +114,12 @@
   - The loop processes one line at a time.
   - `strip()` removes the newline when displaying it.
 
-  #note[The file must exist. File-not-found errors and exception handling are covered in Week 8.]
-]
 
-#slide(title: [What If the File Does Not Exist?])[
+#pause
+
+  #note[The file must exist. File-not-found errors and exception handling are covered in Week 8.]
+
+== What If the File Does Not Exist? 
   ```python
   with open("missing.txt", "r", encoding="utf-8") as file:
       print(file.read())
@@ -129,9 +131,8 @@
   - Writing (`"w"`) or appending (`"a"`) can create one.
 
 
-]
 
-#slide(title: [Activity 1 — Make a Journal])[
+== Activity 1 — Make a Journal
   *Quick code along*
 
   1. Ask for one note and append it to `journal.txt`.
@@ -139,9 +140,9 @@
   3. Run the program twice: do earlier notes remain?
 
  
-]
 
-#slide(title: [Journal — Let's Write the Code])[
+
+== Journal — Let's Write the Code
   *Code along - Solution*
 
   ```python
@@ -156,9 +157,9 @@
   ```
 
   *Predict:* What does `"a"` do? Why do we add `"\\n"`?
-]
 
-#slide(title: [Journal — Run It Twice!])[
+
+== Journal — Run It Twice!
   *First run:*
   ```text
   Enter a journal note: Learned about files
@@ -175,9 +176,9 @@
   Learned about files
   Practised Python
   ```
-]
 
-#slide(title: [Why Plain Text Is Not Always Enough])[
+
+== Plain Text Is Not Always Enough
   Our dog records contain *several related values*:
 
   ```python
@@ -191,9 +192,9 @@
 
   #pause
   Use *JSON* — a text format for structured data.
-]
 
-#slide(title: [Saving Structured Data with JSON])[
+= Save and retrieve data using  JSON
+== Saving Structured Data with JSON
   ```python
   import json
 
@@ -204,9 +205,8 @@
   `json.dump()` writes our list of dictionaries to a file.
 
   `indent=4` makes the saved file readable.
-]
 
-#slide(title: [Loading Structured Data with JSON])[
+== Loading Structured Data with JSON
   ```python
   import json
 
@@ -219,9 +219,8 @@
   `json.load()` gives us a Python list or dictionary again.
 
 
-]
 
-#slide(title: [The Load → Change → Save Pattern])[
+== The Load → Change → Save Pattern
   ```text
   START PROGRAM
       LOAD saved records
@@ -233,9 +232,8 @@
   ```
 
   * Why must we save *after* making a change?*
-]
-
-#slide(title: [Input Is Not Always Valid])[
+= Input Validation
+== Input Is Not Always Valid
   ```python
   age = int(input("Enter the dog's age: "))
   ```
@@ -246,11 +244,11 @@
   - `hello`?
 
   The first two can be rejected with *conditions*.
-
+#pause
   #note[Non-numeric input raises ValueError. We'll learn how to handle that with try/except in Week 8.]
-]
 
-#slide(title: [Validation: Check Before Accepting])[
+
+== Validation: Check Before Accepting
   *Input validation* checks whether a value meets our rules.
 
   ```python
@@ -263,9 +261,9 @@
   ```
 
   *Question:* Does this let the user try again?
-]
 
-#slide(title: [Keep Asking Until It Is Valid])[
+
+== Keep Asking Until It Is Valid
   ```python
   age = int(input("Age (0 to 25): "))
 
@@ -279,9 +277,9 @@
   The loop repeats while the age is *outside* our range.
 
   #note[This assumes numeric input. Handling letters is a separate Week 8 topic.]
-]
 
-#slide(title: [Prediction: Will the Loop Run?])[
+
+== Prediction: Will the Loop Run?
   ```python
   while age < 0 or age > 25:
       age = int(input("Try again: "))
@@ -294,9 +292,9 @@
 
   #pause
   *Discuss:* Why is `or` correct here, rather than `and`?
-]
 
-#slide(title: [Validate a Menu Choice])[
+
+== Validate a Menu Choice
   ```python
   choice = input("Choose A, V or Q: ").strip().upper()
 
@@ -304,28 +302,28 @@
       print("Invalid choice")
       choice = input("Choose A, V or Q: ").strip().upper()
   ```
-
+#pause 
   `strip()` removes extra spaces.
-
+#pause 
   `upper()` allows lowercase input.
 
 
-]
 
-#slide(title: [Put Validation in a Function])[
+
+== Put Validation in a Function
   ```python
   def get_menu_choice():
       choice = input("A=Add, V=View, Q=Quit: ").strip().upper()
       while choice not in ["A", "V", "Q"]:
-          print("Please enter A, V or Q")
+          print("Invalid choice")
           choice = input("A=Add, V=View, Q=Quit: ").strip().upper()
       return choice
   ```
 
   *Why is a function better than repeating this code throughout a program?*
-]
 
-#slide(title: [Validate Before Saving])[
+
+== Validate Before Saving
   ```python
   name = input("Dog's name: ").strip()
   while name == "":
@@ -339,9 +337,41 @@
   ```
 
   *Key idea:* Check data *before* adding it to the list or saving the file.
+
+== Validating Input Is a Good Habit
+
+  - Check that the input is the right *type* (number, text, etc.) *(next week)*
+  - Check that the input is in the right *range* (0 to 25, A/V/Q, etc.)
+  - Keep asking until the user gives valid input.
+
+== Examples
+  - Age must be between 0 and 125.
+  - Price must be a non-negative number.
+   - difference between non-negative and positive: 0 is allowed for non-negative, but not for positive.
+  - Name cannot start with a number.
+  - Name cannot be blank.
+  
+#pause
+
+#note[Functions might either return 
+  - a valid value or 
+  - return true/false to indicate whether the input is valid.]
+
+== 
+#slide[title: [Function - return a valid value]
+1. Write a function that returns a valid age (0 to 125) by checking the input or keeps asking until the user enters a valid age.
+  ```python
+   def get_valid_age():
+       age = int(input("Enter age (0 to 125): "))
+       while age < 0 or age > 125:
+           print("Invalid age. Please try again.")
+           age = int(input("Enter age (0 to 125): "))
+       return age
+
+  ```
 ]
-
-
+#slide[title: [Function - return true or false to indicate whether the input is valid]]
+1. Write a function that returns true or false to indicate whether the input is a valid age (0 to 125) 
 #slide(title: [Check Your Understanding])[
 *Quick questions:*
 
