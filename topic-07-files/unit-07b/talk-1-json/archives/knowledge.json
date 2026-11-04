@@ -1,0 +1,13 @@
+{
+"questions": [
+{"key": "power_on", "text": "Does it turn on?"},
+{"key": "display_on", "text": "Is there an image?"}
+]
+,
+"rules": [
+{"when": {"power_on": "no"},
+"advice": "Check the power cable and socket."},
+{"when": {"power_on": "yes", "display_on": "no"},
+"advice": "Check the monitor connection."}
+]
+}
