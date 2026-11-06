@@ -135,11 +135,11 @@ Look for:
 Here: `ZeroDivisionError` — dividing by zero.
 ]
 
-#slide(title: [Java Exceptions → Python Exceptions])[
+#slide(title: [Python Exceptions])[
 #table(
-  columns: (1.1fr, 1fr, 1.2fr),
+  columns: (1.1fr, 1fr),
   inset: 7pt,
-  [*Python*], [*Typical cause*],
+  [*Python Error*], [*Typical cause*],
   [`ValueError`], [Converting `"abc"` to `int`],
   [`ZeroDivisionError`], [Dividing by zero],
   [`IndexError`], [Invalid list index],
@@ -163,9 +163,13 @@ Here: `ZeroDivisionError` — dividing by zero.
 - `ZeroDivisionError`: division by zero
 - `json.JSONDecodeError`: invalid JSON content
 
-*Link to Week 7:* Which errors might occur when loading `dogs.json`?
+Which errors might occur when loading a `.json` file?
 ]
-
+#slide(title: [Python Exception Hierarchy])[
+  #align(center)[
+    #image("assets/python-exception-hierarchy.png", width: 100%, height: 82%, fit: "contain")
+  ]
+]
 #slide(title: [Predict Before Running])[
 ```python
 dogs = [{"name": "Buddy"}]
@@ -217,6 +221,30 @@ except ValueError:
 
 #note[Exception handling does not automatically correct invalid data. We must decide what the program should do next.]
 ]
+#slide(title: [How `try`, `except`, `else` and `finally` Work])[
+  #grid(
+    columns: (1.3fr, 1fr),
+    gutter: 18pt,
+    align: horizon,
+    [
+      #image("assets/exception-flow.png", width: 100%)
+    ],
+    [
+      *`try`* — Run code that might cause an exception.
+
+      #v(0.55em)
+      *`except`* — Run only if a matching exception occurs.
+
+      #v(0.55em)
+      *`else`* — Run only if the `try` block completes without an exception.
+
+      #v(0.55em)
+      *`finally`* — Run whether an exception occurred or not.
+    ],
+  )
+  #v(0.3em)
+  #align(center)[*Remember:* `else` and `finally` are optional.]
+]
 
 #slide(title: [Validation Versus Exceptions])[
 ```python
@@ -231,35 +259,56 @@ else:
 `abc` cannot be converted to an integer: *exception*.
 ]
 
+
 #slide(title: [Combine a Loop with `try`])[
 ```python
-while True:
+valid_age = False
+while not valid_age:
     try:
         age = int(input("Dog age (0–25): "))
+
         if 0 <= age <= 25:
-            break
-        print("Age must be 0 to 25")
+            valid_age = True
+        else:
+            print("Age must be 0 to 25")
+
     except ValueError:
         print("Enter a whole number")
+
 print("Accepted:", age)
 ```
 *Test:* `abc`, `-1`, `26`, `4`.
 ]
 
+
+
 #slide(title: [Live Coding — Turn It into a Function])[
 ```python
 def get_valid_age():
-    while True:
+    valid_age = False
+
+    while not valid_age:
         try:
             age = int(input("Age (0–25): "))
+
             if 0 <= age <= 25:
-                return age
-            print("Out of range")
+                valid_age = True
+            else:
+                print("Out of range")
+
         except ValueError:
             print("Whole numbers only")
+
+    return age
+
+
+dog_age = get_valid_age()
+print("Accepted:", dog_age)
 ```
-Why does `return` remove the need for `break`?
+
+*Question* Why do we put `return age` after the loop?
 ]
+
 
 #slide(title: [Be Specific About What You Catch])[
 Prefer:
@@ -313,26 +362,26 @@ with open("products.json", "w", encoding="utf-8") as file:
 #note[The `with` statement closes the file automatically, including when an exception occurs.]
 ]
 
-#slide(title: [Handling Save Errors in the Menu])[
+#slide(title: [Handling Save Errors])[
 ```python
 import json
 
-def save_products(products):
+def save_dogs(dogs):
     try:
-        with open("products.json", "w", encoding="utf-8") as file:
-            json.dump(products, file, indent=4)
+        with open("dogs.json", "w", encoding="utf-8") as file:
+            json.dump(dogs, file, indent=4)
     except OSError as error:
-        print("Could not save products:", error)
+        print("Could not save dogs:", error)
         return False
     return True
 ```
 
-The menu can check the returned `True` or `False` before displaying a success message.
+The calling code can check the returned `True` or `False` before displaying a success message.
 
 *Question:* Why should we avoid printing "Saved!" before we know the operation succeeded?
 ]
 
-#slide(title: [Back to Persistence: Missing Files])[
+#slide(title: [Missing Files])[
 ```python
 import json
 
@@ -395,7 +444,21 @@ print(average(20, 0))
 ```
 Modify the caller so it catches `ZeroDivisionError`.
 
-Then discuss: should we *also validate* that `count` is greater than zero?
+Should we *also validate* that `count` is greater than zero?
+]
+
+#slide(title: [Solution — Catching an Exception in the Caller])[
+```python
+def average(total, count):
+    return total / count
+
+try:
+    result = average(20, 0)
+    print("Average:", result)
+
+except ZeroDivisionError:
+    print("Cannot calculate an average when count is zero")
+```
 ]
 
 #slide(title: [Test Cases — Not Just Happy Paths])[
@@ -416,8 +479,44 @@ Match the problem to the best response:
 3. JSON contains a missing comma.
 4. A program recommends the wrong solution but does not crash.
 
-*Discuss:* Which are exceptions? Which is a logic error? Should the program retry, report the problem, or stop safely?
+*Which* are exceptions? Which is a logic error? Should the program retry, report the problem, or stop safely?
 ]
+
+#slide(title: [Quick Check — Answers])[
+#table(
+  columns: (2fr, 1.8fr, 2.5fr),
+  inset: 8pt,
+  align: (left, left, left),
+  [*Problem*], [*Error Type*], [*Best Response*],
+
+  [1. `cat` entered for numeric code],
+  [`ValueError`],
+  [Catch the exception and ask the user to try again.],
+
+  [2. `knowledge.json` is missing],
+  [`FileNotFoundError`],
+  [Explain that the file is missing. Stop safely or use suitable defaults.],
+
+  [3. JSON contains a missing comma],
+  [`JSONDecodeError`],
+  [Report invalid JSON and stop safely. The file needs correcting.],
+
+  [4. Wrong recommendation, no crash],
+  [Logic error],
+  [Debug and fix the decision-making rules.]
+)
+
+#v(0.8em)
+
+*Key takeaway:*
+
+- *Exceptions* can be caught and handled using `try` / `except`.
+- *Logic errors* produce incorrect results and require debugging.
+- *Handling an exception* does not necessarily fix the underlying problem.
+]
+
+
+
 
 #slide(title: [Monday Recap])[
 - An exception is not the same as a logic error.
