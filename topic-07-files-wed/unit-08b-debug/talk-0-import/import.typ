@@ -20,7 +20,7 @@ Imagine writing every tool you need from scratch: random numbers, JSON reading, 
 
 A *module* is usually a Python file containing functions, variables or classes.
 
-*Question:* Have we already imported anything in our programs? (`json`, `random`, `pathlib`)
+We have we already imported in our programs -  (`json`, `random`, `pathlib`)
 ]
 
 #slide(title: [Three Places Python Code Can Come From])[

@@ -45,6 +45,257 @@ No. That is a *logic error*. We must inspect the calculation rather than add `tr
 *Don't change random lines until the output looks right.*
 ]
 
+
+#slide(title: [How Did Programmers Debug Before Modern IDEs?])[
+  Programmers have always needed to find and fix errors —
+  long before Visual Studio Code and modern IDEs existed.
+
+  #v(10pt)
+
+  #table(
+    columns: (1.3fr, 3fr),
+    inset: 8pt,
+
+    [*Technique*], [*How it worked*],
+
+    [Desk checking],
+    [Read through the code and manually trace what should happen.],
+
+    [Print statements],
+    [Display variable values and messages while the program runs.],
+
+    [Logging],
+    [Record events, values and errors in a file for later investigation.],
+
+    [Tracing],
+    [Follow the sequence of instructions or functions being executed.],
+
+    [Debugging tools],
+    [Use specialised software to pause programs and inspect their state.]
+  )
+
+  #v(8pt)
+
+  #text(size: 13pt)[
+    Many of these techniques are still used by
+    professional programmers today.
+  ]
+]
+
+
+#slide(title: [Desk Checking — Be the Computer!])[
+  Before running a program, we can manually trace
+  its execution using a *trace table*.
+
+  #v(8pt)
+
+  #grid(
+    columns: (1fr, 1fr),
+    gutter: 18pt,
+
+    [
+      ```python
+      numbers = [5, 10, 15]
+      total = 0
+
+      for number in numbers:
+          total = number
+
+      print(total)
+      ```
+
+      #v(8pt)
+
+      *Question:* What should the total be?
+    ],
+
+    [
+      #table(
+        columns: (1fr, 1fr),
+        inset: 8pt,
+        [*number*], [*total*],
+        [5], [5],
+        [10], [10],
+        [15], [15],
+      )
+
+      #v(10pt)
+
+      *Expected:* 30
+
+      *Actual:* 15
+
+      #text(size: 15pt)[
+        The trace table reveals that `total`
+        is overwritten rather than accumulated.
+      ]
+    ]
+  )
+]
+
+
+#slide(title: [Other Ways Programmers Investigated Bugs])[
+  #table(
+    columns: (1.2fr, 3fr),
+    inset: 9pt,
+
+    [*Technique*], [*Example*],
+
+    [Logging],
+    [
+      ```python
+      with open("debug.log", "a") as file:
+          file.write("Starting calculation\n")
+      ```
+
+      Record what happened, even after the program finishes.
+    ],
+
+    [Tracing],
+    [
+      Follow which functions and instructions execute,
+      and in what order.
+    ],
+
+    [Low-level debugging],
+    [
+      Inspect memory, processor registers and machine
+      instructions using specialised tools.
+    ],
+
+    [Interactive debuggers],
+    [
+      Pause execution, examine variables and step
+      through instructions.
+    ]
+  )
+
+  #v(8pt)
+
+  #text(size: 14pt)[
+    Early debugging tools were often command-line based.
+    Graphical IDEs later made these features easier to use.
+  ]
+]
+
+
+#slide(title: [Debugging with `print()` Statements])[
+  *What should this program calculate?*
+
+  ```python
+  prices = [10, 20, 30]
+  total = 0
+
+  for price in prices:
+      total = price
+      print("Price:", price)
+      print("Total so far:", total)
+
+  print("Final total:", total)
+  ```
+
+  #v(8pt)
+
+  #text(size: 17pt)[
+    *Expected result:* 60
+
+    *Actual result:* 30
+  ]
+
+  #v(8pt)
+
+  #block(
+    fill: rgb("#FFF1DB"),
+    inset: 10pt,
+    radius: 5pt,
+  )[
+   
+
+    What do the print statements tell us?
+
+    Which line contains the logic error?
+  ]
+]
+
+
+#slide(title: [What's the Problem with Print Debugging?])[
+  #table(
+    columns: (1.2fr, 2.8fr),
+    inset: 9pt,
+
+    [*Limitation*], [*Why it matters*],
+
+    [Extra code],
+    [We must add print statements throughout our program.],
+
+    [Repeated runs],
+    [We often need to change the prints and run the program again.],
+
+    [Lots of output],
+    [It can be difficult to find the important information.],
+
+    [Limited visibility],
+    [We only see the values we remembered to print.],
+
+    [Clean-up],
+    [Temporary debugging statements may need to be removed.]
+  )
+
+  #v(12pt)
+
+  #text(size: 18pt)[
+    *Wouldn't it be useful if we could pause the program
+    and inspect its variables without adding extra code?*
+  ]
+]
+
+
+#slide(title: [Why Do IDEs Have Debuggers?])[
+  Modern IDEs such as *Visual Studio Code* provide debugging
+  tools that let us investigate a program while it runs.
+
+  #v(10pt)
+
+  #table(
+    columns: (1.2fr, 2.8fr),
+    inset: 9pt,
+
+    [*Debugger feature*], [*What it allows us to do*],
+
+    [Breakpoints],
+    [Pause execution at a chosen line.],
+
+    [Variables],
+    [See the current values without adding print statements.],
+
+    [Step Over],
+    [Execute one line at a time.],
+
+    [Step Into],
+    [Follow execution inside a function.],
+
+    [Call Stack],
+    [See which functions were called to reach the current point.],
+
+    [Exception inspection],
+    [Investigate where and why an exception occurred.]
+  )
+
+  #v(10pt)
+
+  #block(
+    fill: rgb("#EAF3FA"),
+    inset: 10pt,
+    radius: 5pt,
+  )[
+    *A debugger doesn't fix the code for us.*
+
+    It helps us understand what the program is actually doing.
+  ]
+]
+
+
+
 #slide(title: [VS Code — Before You Start])[
 1. Download Python Examples from this weeks labs
 2. Open the `Python-Examples` folder using *File → Open Folder*.
@@ -57,16 +308,43 @@ No. That is a *logic error*. We must inspect the calculation rather than add `tr
 ]
 
 #slide(title: [Debugger Controls — Your Remote Control])[
-#table(columns: (1.4fr, 1fr, 3.2fr),
-  [*Action*], [*Shortcut*], [*What happens*],
-  [Continue], [`F5`], [Run to the next breakpoint],
-  [Step Over], [`F10`], [Run the current line; don't enter a function call],
-  [Step Into], [`F11`], [Enter the function being called],
-  [Step Out], [`Shift+F11`], [Finish the function and return to the caller],
-  [Stop], [`Shift+F5`], [End the debugging session],
-)
+  #table(
+    columns: (1.2fr, 0.8fr, 0.9fr, 3fr),
+    align: (left, center, center, left),
+    inset: 8pt,
 
-#text(size: 12pt)[Default shortcuts; they may differ on some computers.]
+    [*Action*], [*Button*], [*Shortcut*], [*What happens*],
+
+    [Continue],
+    [#image("assets/continue.png", width: 70%)],
+    [`F5`],
+    [Run to the next breakpoint],
+
+    [Step Over],
+    [#image("assets/step_over.png", width: 70%)],
+    [`F10`],
+    [Run the current line; don't enter a function call],
+
+    [Step Into],
+    [#image("assets/setp_in.png", width: 70%)],
+    [`F11`],
+    [Enter the function being called],
+
+    [Step Out],
+    [#image("assets/step_out.png", width: 70%)],
+    [`Shift+F11`],
+    [Finish the function and return to the caller],
+
+    [Stop],
+    [#image("assets/stop.png", width: 70%)],
+    [`Shift+F5`],
+    [End the debugging session],
+  )
+
+  #v(8pt)
+  #text(size: 12pt)[
+    Default shortcuts; they may differ on some computers.
+  ]
 ]
 
 #slide(title: [What Can We Inspect?])[
@@ -106,7 +384,7 @@ print("Total:", calculate_total([10, 20, 30]))
   [3], [30], [60],
 )
 
-*Ask:* Which assignment would *add* to the total rather than replace it?
+Which assignment would *add* to the total rather than replace it?
 
 *Live code:* fix the line, then retest `[]`, `[10]`, `[10, 20, 30]`.
 ]
@@ -199,7 +477,7 @@ print("Found:", contains_number([10, 20, 42], 42))
 *Debug:* Step Into `contains_number`. Why does the function return after the first item?
 ]
 
-#slide(title: [Pause and Discuss — Return vs Loop])[
+#slide(title: [Return vs Loop])[
 A `return` statement ends the *whole function* immediately.
 
 If we want to search a list, when should we return `False`?
@@ -237,7 +515,7 @@ The program tries to open `data/student.json` but the real file is `data/student
 
 *First:* fix the spelling mistake in the source code.
 
-*Then discuss:* What if the file is genuinely missing on another computer?
+What if the file is genuinely missing on another computer?
 
 - *Debugging* fixes the incorrect path.
 - *Exception handling* can report a genuine missing file gracefully.
@@ -323,7 +601,7 @@ print("Area:", rectangle_area(6, 4))
 main.py
    |
    | import calculator
-   v
+   
 calculator.py
    |
    +-- add(a, b)
@@ -332,7 +610,7 @@ calculator.py
 
 The function stays defined in `calculator.py`. `main.py` calls it through the imported module.
 
-*Live demo:* Put a breakpoint inside `calculator.add()` and press *Step Into (F11)* from `main.py`.
+Put a breakpoint inside `calculator.add()` and press *Step Into (F11)* from `main.py`.
 ]
 
 #slide(title: [Common Import Mistakes])[
