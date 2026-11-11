@@ -85,7 +85,7 @@ print(type(rex))           # <class '__main__.Dog'>
 print(rex is buddy)        # False — different objects
 ```
 
-#pause
+
 
 *Analogy:* the class `Dog` is like the concept of "dog" — the objects `rex`, `buddy`, `fido` are specific individual dogs.
 
@@ -105,7 +105,7 @@ class ClassName:
         # can access self.attribute1, self.attribute2, etc.
 ```
 
-#pause
+#pagebreak()
 
 *Key rules:*
 - Class names use `PascalCase` (each word capitalised)
@@ -124,7 +124,10 @@ class Person:
 # Creating objects — __init__ is called automatically
 alice = Person("Alice", 25)
 bob   = Person("Bob", 30)
+```
+#pagebreak()
 
+```python
 # Accessing instance variables
 print(alice.name)   # Alice
 print(bob.age)      # 30
@@ -177,10 +180,19 @@ class Person:
     def __str__(self):
         """Return a human-readable string representation."""
         return f"Person(name='{self.name}', age={self.age})"
+```
+#pagebreak()
+```python
+# contd...
 
 alice = Person("Alice", 25)
 print(alice)        # Person(name='Alice', age=25)
 print(str(alice))   # Person(name='Alice', age=25)
+                    # You don't need to call str() explicitly; 
+                    # print() does it for you.
+
+# With __str__, you get something like:
+# Person(name='Alice', age=25)
 
 # Without __str__, you'd get something like:
 # <__main__.Person object at 0x7f...>
@@ -204,14 +216,18 @@ class Student:
     def add_score(self, score):
         """Add a score to this student's record."""
         self.scores.append(score)
+```
 
+#pagebreak()
+
+```python
     def average(self):
         """Return average score, or 0 if no scores."""
         if not self.scores:
             return 0
         return sum(self.scores) / len(self.scores)
 
-    def is_passing(self, threshold=60):
+    def is_passing(self, threshold=40):
         """Return True if the student's average meets the threshold."""
         return self.average() >= threshold
 
@@ -219,11 +235,17 @@ class Student:
         avg = self.average()
         status = "Pass" if self.is_passing() else "Fail"
         return f"[{self.student_id}] {self.name}: avg={avg:.1f} ({status})"
+```
 
+#pagebreak()
+
+```python
 s = Student("Alice", "S001")
+
 s.add_score(85)
 s.add_score(92)
 s.add_score(78)
+
 print(s)    # [S001] Alice: avg=85.0 (Pass)
 ```
 #slide(
