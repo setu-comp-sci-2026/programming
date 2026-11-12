@@ -1,9 +1,0 @@
-Reflection Outline:
-
-Where selection/iteration used
-
-Methods with parameters and return values
-
-How PCP/HP were understood and used
-
-Coding process and challenges
