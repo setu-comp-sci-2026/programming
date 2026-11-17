@@ -78,7 +78,7 @@ class BankAccount:
         self._balance = balance  # "protected" — internal, use with caution
 ```
 
-#pause
+#pagebreak()
 
 A single leading underscore `_` means: *"this is an implementation detail — don't access it directly from outside the class."*
 
@@ -131,7 +131,9 @@ class Person:
     def get_name(self):
         """Getter — read the name."""
         return self._name
-
+```
+#pagebreak()
+```python
     def set_name(self, name):
         """Setter — validate and set the name."""
         if not name.strip():
@@ -145,10 +147,18 @@ class Person:
         if not isinstance(age, int) or age < 0 or age > 150:
             raise ValueError(f"Invalid age: {age}")
         self._age = age
-
+```
+#pagebreak()
+```python
 p = Person("alice", 25)
 print(p.get_name())     # Alice  (title-cased in setter)
+print(p.get_age())      # 25
+
 p.set_age(26)
+print(p.get_age())      # 26
+
+p.set_name("bob")
+print(p.get_name())     # Bob
 ```
 
 = Public vs Private — Design Guidelines
@@ -166,29 +176,32 @@ p.set_age(26)
 #pause
 
 *Good design principle:* minimise the public interface. Only expose what the user of the class *needs* to use. Everything else should be private.
+#pagebreak()
+```python
+class ClickCounter:
+    def __init__(self):
+        self._count = 0         # private — don't expose directly
+
+    def click(self):            # public
+        self._count += 1
+
+    def reset(self):            # public
+        self._count = 0
+
+    def get_count(self):        # public
+        return self._count
+```
+
+#pagebreak()
 
 ```python
-class Stack:
-    def __init__(self):
-        self._items = []        # private — don't expose directly
-
-    def push(self, item):       # public
-        self._items.append(item)
-
-    def pop(self):              # public
-        if self.is_empty():
-            raise IndexError("Stack is empty")
-        return self._items.pop()
-
-    def peek(self):             # public
-        return self._items[-1]
-
-    def is_empty(self):         # public
-        return len(self._items) == 0
-
-    def size(self):             # public
-        return len(self._items)
+counter = ClickCounter()
+counter.click()
+counter.click()
+print(counter.get_count())   # 2
 ```
+#pause
+There is *no* `set_count()` — so outside code can never set the count to `-5`. The only ways to change it are `click()` and `reset()`.
 
 = Encapsulation in Practice — Temperature
 

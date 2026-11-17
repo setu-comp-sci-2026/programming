@@ -85,6 +85,7 @@ class Person:
         """The person's age."""
         return self._age
 
+#continued from above
 p = Person("Alice", 25)
 print(p.name)    # Alice   (no parentheses — accessed like an attribute)
 print(p.age)     # 25
@@ -106,7 +107,11 @@ class Person:
     @property
     def age(self):
         return self._age
+```
+#pagebreak()
 
+```python
+# continued from above
     @age.setter
     def age(self, value):
         """Validate and set age."""
@@ -115,7 +120,11 @@ class Person:
         if value < 0 or value > 150:
             raise ValueError(f"Age must be 0-150, got {value}")
         self._age = value
+```
+#pagebreak()
 
+```python
+# continued from above
 p = Person("Alice", 25)
 print(p.age)     # 25
 p.age = 26       # calls the setter
@@ -142,7 +151,11 @@ class Rectangle:
 
     @property
     def height(self): return self._height
+```
+#pagebreak()
 
+```python
+# continued from above
     @property
     def area(self):
         """Computed — no storage needed."""
@@ -155,7 +168,10 @@ class Rectangle:
     @property
     def is_square(self):
         return self._width == self._height
+```
 
+```python
+# continued from above
 r = Rectangle(4, 6)
 print(r.area)       # 24  — looks like an attribute, computed from w*h
 print(r.perimeter)  # 20
@@ -180,6 +196,7 @@ class BankAccount:
     def name(self):
         return self._name
 
+# continued from above
     @name.setter
     def name(self, value):
         if not value.strip():
@@ -189,7 +206,10 @@ class BankAccount:
     @property
     def balance(self):
         return self._balance
-
+```
+#pagebreak()
+```python
+# continued from above
     @balance.setter
     def balance(self, value):
         if value < 0:
@@ -210,6 +230,10 @@ print(acc.account_no)       # ACC001
 # Set via property (validation runs automatically)
 acc.name = "Alice Smith"
 print(acc.name)             # Alice Smith
+```
+#pagebreak()
+```python
+# continued from above
 
 # These raise ValueError:
 try:
@@ -231,12 +255,14 @@ Three decorators work together:
 class Temperature:
     def __init__(self, celsius):
         self._celsius = celsius
-
     @property
     def celsius(self):
         """Getter — read the temperature."""
         return self._celsius
-
+```
+#pagebreak()
+```python
+# continued from above
     @celsius.setter
     def celsius(self, value):
         """Setter — validate before storing."""
@@ -249,11 +275,17 @@ class Temperature:
         """Deleter — called when: del obj.celsius"""
         print("Deleting temperature...")
         del self._celsius
-
+```
+#pagebreak()
+```python
     @property
     def fahrenheit(self):
         """Computed read-only property."""
         return self._celsius * 9/5 + 32
+```
+#pagebreak()
+```python
+# continued from above
 
 t = Temperature(100)
 print(t.celsius)        # 100
