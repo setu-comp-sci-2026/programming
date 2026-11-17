@@ -26,9 +26,7 @@ def recommend(rules, answers):
 
 
 knowledge = load_knowledge("knowledge.json")
-# print(knowledge)
-#print("Questions:", knowledge["questions"])
-print("Rules:", knowledge["rules"])
-# answers = ask_questions(knowledge["questions"])
-# advice = recommend(knowledge["rules"], answers)
-# print("Recommendation:", advice)
+
+answers = ask_questions(knowledge["questions"])
+advice = recommend(knowledge["rules"], answers)
+print("Recommendation:", advice)
