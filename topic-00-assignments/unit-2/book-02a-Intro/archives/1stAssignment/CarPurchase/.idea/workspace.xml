@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="413399fa-f92d-4d1c-9a4f-1cd26770dced" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../CarPurchase - skeleton/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CarPurchase - skeleton/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CarPurchase - skeleton/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CarPurchase - skeleton/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CarPurchase - skeleton/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CarPurchase - skeleton/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CarPurchase - skeleton/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CarPurchase - skeleton/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CarPurchase - skeleton/CarPurchase.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CarPurchase - skeleton/reflection.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CarPurchase - skeleton/src/CarPurchaserHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CarPurchase - skeleton/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarPurchaserHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase - skeleton/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase - skeleton/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase - skeleton/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase - skeleton/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase - skeleton/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase - skeleton/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase - skeleton/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase - skeleton/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase - skeleton/CarPurchase.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase - skeleton/reflection.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase - skeleton/src/CarPurchaserHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase - skeleton/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase/CarPurchase.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase/src/CarPurchaserHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mmCarPurchase/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/NOTYETpanelvideo/panelvideo.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/NOTYETpanelvideo/videoid2023" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/NOTYETpanelvideo/videoid2024" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/a1-2022-observations.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/a1-2022-observations.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/book-01assignment/00.Assignment-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../unit-1/book-01assignment/00.Assignment-1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/book-01assignment/01.Advice.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../unit-1/book-01assignment/01.Advice.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/book-01assignment/02.Specification.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/book-01assignment/03.Constraints.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../unit-1/book-01assignment/03.Constraints.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/book-01assignment/04.Marking-Rubric.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/book-01assignment/05.Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/book-01assignment/06.Reflection.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/book-01assignment/07.Submission.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/book-01assignment/HOLDarchives/Assignment 1 rubric - 2021.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/book-01assignment/HOLDarchives/RubricA1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/book-01assignment/HOLDarchives/~$Assignment 1 rubric - 2021.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/book-assignment-1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-1/~$-2022-observations.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/00.Assessment-Overview.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/01.Assessment-1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/02.Assesment-2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/03.Assesment-3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify/Songify3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify/src/Song.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify/src/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify1/Songify2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify1/out/production/Songify1/Songify.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify1/out/production/Songify1/SongifySolution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify1/src/Songify.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify1/src/SongifySolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/Songify1/src/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenu/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenu/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenu/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenu/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenu/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenu/SongifyMenu2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenu/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenu/src/Playlist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenu/src/Song.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenu/src/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenuSolution/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenuSolution/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenuSolution/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenuSolution/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenuSolution/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenuSolution/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenuSolution/src/Playlist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenuSolution/src/Song.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifyMenu/SongifyMenuSolution/src/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifySolution/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifySolution/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifySolution/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifySolution/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifySolution/out/production/SongifySolution/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifySolution/out/production/SongifySolution/Song.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifySolution/out/production/SongifySolution/Utilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifySolution/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifySolution/src/Song.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/2024/SongifySolution/src/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysAss.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysAss/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysAss/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysAss/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysAss/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysAss/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysAss/CouseSys.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysAss/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysAss/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysAss/src/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysMenu.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysMenu/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysMenu/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysMenu/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysMenu/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysMenu/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysMenu/CouseSys.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysMenu/src/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysMenu/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysMenu/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CourseSysMenu/src/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAss/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAss/out/production/CouseSys/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAss/out/production/CouseSys/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAss/out/production/CouseSys/Utilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAss2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAss2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAss2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAss2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAss2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAss2/CouseSys.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAss2/src/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAss2/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAss2/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAssSol/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAssSol/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAssSol/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAssSol/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAssSol/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAssSol/CouseSys.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAssSol/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAssSol/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysAssSol/src/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysFull/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysFull/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysFull/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysFull/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysFull/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysFull/CouseSys.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysFull/src/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysFull/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysFull/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysMenuSol/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysMenuSol/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysMenuSol/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysMenuSol/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysMenuSol/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysMenuSol/CouseSys.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysMenuSol/src/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysMenuSol/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/CouseSysMenuSol/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/StudentAss1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/StudentAss1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/StudentAss1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/StudentAss1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/StudentAss1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/StudentAss1/src/StudentInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/archives/StudentAss1/src/StudentInfoTODO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/img/main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/img/menu2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/img/project.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/img/project2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/book-02assesments/properties.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-2/topic.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/00.Assignment2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/01.Overview.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/02.Classes Overview.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/03.HierarchyOverview.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/04.Planet.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/05.GasPlanet.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/06.IcePlanet.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/07.PlanetSystemAPI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/08.Driver.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/09.Utils.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/10.Reflection.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/12.PlanOfAction.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/13.Marking Scheme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/14.Submitting.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/15.Tests.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/Ass2-marking-scheme.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ISerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ManufacturerAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ManufacturerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SampleWrittenInterview.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SampleWrittenInterview.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ScannerInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/.idea/libraries/xstream_1_4_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/ShopV8.0.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/lib/xstream-1.4.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV1.0/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV1.0/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV1.0/Store.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV3.0/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV3.0/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV3.0/Store.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV4.0/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV4.0/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV4.0/ScannerInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV4.0/Store.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV4.0/Utilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV5.0/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV5.0/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV5.0/ScannerInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV5.0/Store.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV5.0/Utilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV5.1/controllers/Store.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV5.1/main/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV5.1/models/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV5.1/utils/ScannerInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV5.1/utils/Utilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV6.0/controllers/Store.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV6.0/main/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV6.0/models/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV6.0/utils/ScannerInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV6.0/utils/Utilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV7.0/controllers/Store.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV7.0/main/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV7.0/models/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV7.0/utils/LanguageUtility$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV7.0/utils/LanguageUtility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV7.0/utils/ScannerInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV7.0/utils/Utilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV8.0/controllers/Store.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV8.0/main/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV8.0/models/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV8.0/utils/ScannerInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/production/ShopV8.0/utils/Utilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV6.0/controllers/StoreTest$BoilerPlate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV6.0/controllers/StoreTest$CRUD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV6.0/controllers/StoreTest$Listing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV6.0/controllers/StoreTest$Stats.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV6.0/controllers/StoreTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV6.0/models/ProductTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV6.0/utils/UtilitiesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV7.0/controllers/StoreTest$BoilerPlate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV7.0/controllers/StoreTest$CRUD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV7.0/controllers/StoreTest$Listing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV7.0/controllers/StoreTest$Stats.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV7.0/controllers/StoreTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV7.0/models/ProductTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV7.0/utils/UtilitiesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV8.0/controllers/StoreTest$BoilerPlate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV8.0/controllers/StoreTest$CRUD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV8.0/controllers/StoreTest$Listing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV8.0/controllers/StoreTest$Stats.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV8.0/controllers/StoreTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV8.0/models/ProductTest$BoilerPlate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV8.0/models/ProductTest$MapCRUD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV8.0/models/ProductTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV8.0/utils/LanguageUtilityTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/out/test/ShopV8.0/utils/UtilitiesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/products.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/src/controllers/Store.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/src/main/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/src/models/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/src/utils/ScannerInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/ShopV8.0/src/utils/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SocialNetworkV9.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/.idea/libraries/xstream_1_4_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/SolarSystem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/lib/xstream-1.4.20.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/planetarySystemsTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/src/controllers/PlanetSystemAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/src/main/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/src/models/GasPlanet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/src/models/IcePlanet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/src/models/Planet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/src/utils/CoreCompositionUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/src/utils/ISerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/src/utils/ScannerInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/src/utils/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem-Solution/test/models/PlanetTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter/.idea/libraries/xstream_1_4_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter/SolarSystem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter/lib/xstream-1.4.20.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter/src/controllers/PlanetSystemAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter/src/main/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter/src/utils/CoreCompositionUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter/src/utils/ISerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter/src/utils/ScannerInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/SolarSystem_Starter/src/utils/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/.idea/libraries/xstream_1_4_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/Technology.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/lib/xstream-1.4.20.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/manufacturers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/Technology/controllers/WearableDeviceAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/Technology/main/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/Technology/models/SmartBand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/Technology/models/SmartWatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/Technology/models/WearableDevice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/Technology/utils/DisplayTypeUtility$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/Technology/utils/DisplayTypeUtility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/Technology/utils/ISerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/Technology/utils/ManufacturerNameUtility$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/Technology/utils/ManufacturerNameUtility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/Technology/utils/ScannerInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/Technology/utils/Utilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/controllers/ManufacturerAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/controllers/TechnologyDeviceAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/main/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/models/ComputingDevice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/models/Manufacturer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/models/SmartBand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/models/SmartWatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/models/Tablet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/models/Technology.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/models/WearableDevice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/utils/ISerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/utils/OperatingSystemUtility$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/utils/OperatingSystemUtility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/utils/ScannerInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/production/untitled/utils/Utilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/test/Technology/models/SmartBandTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/test/Technology/models/SmartWatchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/out/test/Technology/models/WearableDeviceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/qodana.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/src/controllers/WearableDeviceAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/src/main/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/src/models/SmartBand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/src/models/SmartWatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/src/models/WearableDevice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/src/utils/DisplayTypeUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/src/utils/ISerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/src/utils/ManufacturerNameUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/src/utils/ScannerInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/src/utils/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/technologyDevices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/technologyDevicesTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/technologyDevicesemptyTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/test/models/SmartBandTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/test/models/SmartWatchTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Solution/test/models/WearableDeviceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/.idea/libraries/xstream_1_4_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/Technology.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/lib/xstream-1.4.20.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/Technology/controllers/WearableDeviceAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/Technology/main/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/Technology/utils/DisplayTypeUtility$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/Technology/utils/DisplayTypeUtility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/Technology/utils/ISerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/Technology/utils/ManufacturerNameUtility$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/Technology/utils/ManufacturerNameUtility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/Technology/utils/ScannerInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/Technology/utils/Utilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/controllers/ManufacturerAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/controllers/TechnologyDeviceAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/main/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/models/ComputingDevice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/models/Manufacturer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/models/SmartBand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/models/SmartWatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/models/Tablet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/models/Technology.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/models/WearableDevice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/utils/ISerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/utils/OperatingSystemUtility$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/utils/OperatingSystemUtility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/utils/ScannerInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/out/production/untitled/utils/Utilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/src/controllers/WearableDeviceAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/src/main/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/src/utils/DisplayTypeUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/src/utils/ISerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/src/utils/ManufacturerNameUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/src/utils/ScannerInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyAssignment_Starter/src/utils/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/TechnologyDeviceStarting/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/archives/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/6KO.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/AssAccept.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/CelestialSystemAPI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/GasPlanet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/ISerializer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/IcePlanet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/MENUS.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/ScannerInput.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/Star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/StellarObject.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/Utilities.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/celestial.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/dwarfplanet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/main.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/menu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/menus.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/menus/MENUOVERVIEW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/menus/celestReportsMenu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/menus/celestialMenu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/menus/fullMenuStructure.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/menus/mainMenu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/menus/planetaryMenu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/menus/planetaryReportsMenu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/menus/reportsMenu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/overview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/pic of uml.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/planet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/planetSystemApi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/tests/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/tests/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/tests/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/tests/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/tests/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/tests/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/tests/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/uml01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../unit-3/book-3/img/uml02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../topic-000-assignments-PREP/unit-2/book-02assesments/02.Assesment-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../topic-000-assignments-PREP/unit-2/book-02assesments/02.Assesment-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../topic-000-assignments-PREP/unit-3/book-3/01.Overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../topic-000-assignments-PREP/unit-3/book-3/01.Overview.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../topic-000-assignments-PREP/unit-3/book-3/04.Planet.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../topic-000-assignments-PREP/unit-3/book-3/04.Planet.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../topic-000-assignments-PREP/unit-3/book-3/05.GasPlanet.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../topic-000-assignments-PREP/unit-3/book-3/05.GasPlanet.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../topic-000-assignments-PREP/unit-3/book-3/06.IcePlanet.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../topic-000-assignments-PREP/unit-3/book-3/06.IcePlanet.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../topic-000-assignments-PREP/unit-3/book-3/07.PlanetSystemAPI.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../topic-000-assignments-PREP/unit-3/book-3/07.PlanetSystemAPI.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../topic-000-assignments-PREP/unit-3/book-3/14.Submitting.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../topic-000-assignments-PREP/unit-3/book-3/14.Submitting.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SPowerRoche&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/setu-comp-sci-2025/programming&quot;,
+    &quot;accountId&quot;: &quot;3fb72bfb-952e-4e7f-bcc3-8f33e478e89f&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3411tU85PEurreZtyrAHVoEp3sH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Driver.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/git/CertCompScience/programming/topic-00-assignments/unit-1/book-01assignment/archives/CarPurchase - skeleton",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Driver" />
+      <module name="CarPurchase" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Driver" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-84258761d1cc-intellij.indexing.shared.core-IU-243.28141.18" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.28141.18" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="413399fa-f92d-4d1c-9a4f-1cd26770dced" name="Changes" comment="" />
+      <created>1760366482771</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760366482771</updated>
+      <workItem from="1760366483918" duration="4604000" />
+      <workItem from="1760516394223" duration="1904000" />
+      <workItem from="1760520266005" duration="892000" />
+      <workItem from="1760619814000" duration="294000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

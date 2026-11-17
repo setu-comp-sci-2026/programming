@@ -1,0 +1,124 @@
+{
+    "questions": [
+        {
+            "id": "Q1",
+            "text": "Does the computer power on?",
+            "type": "yes_no",
+            "category": "power"
+        },
+        {
+            "id": "Q2",
+            "text": "Are any power lights visible?",
+            "type": "yes_no",
+            "category": "power"
+        },
+        {
+            "id": "Q3",
+            "text": "Can you hear the fan?",
+            "type": "yes_no",
+            "category": "power"
+        },
+        {
+            "id": "Q4",
+            "text": "Does the screen show an image?",
+            "type": "yes_no",
+            "category": "display"
+        },
+        {
+            "id": "Q5",
+            "text": "Can you hear the computer starting normally?",
+            "type": "yes_no",
+            "category": "display"
+        },
+        {
+            "id": "Q6",
+            "text": "Does the computer become very hot?",
+            "type": "yes_no",
+            "category": "temperature"
+        },
+        {
+            "id": "Q7",
+            "text": "Does the computer shut down unexpectedly?",
+            "type": "yes_no",
+            "category": "temperature"
+        },
+        {
+            "id": "Q8",
+            "text": "Can the computer connect to Wi-Fi?",
+            "type": "yes_no",
+            "category": "network"
+        }
+    ],
+    "rules": [
+        {
+            "id": "RULE1",
+            "conditions": {
+                "Q1": "no",
+                "Q2": "no"
+            },
+            "recommendation": "R1"
+        },
+        {
+            "id": "RULE2",
+            "conditions": {
+                "Q1": "no",
+                "Q2": "yes",
+                "Q3": "no"
+            },
+            "recommendation": "R2"
+        },
+        {
+            "id": "RULE3",
+            "conditions": {
+                "Q1": "yes",
+                "Q4": "no",
+                "Q5": "yes"
+            },
+            "recommendation": "R3"
+        },
+        {
+            "id": "RULE4",
+            "conditions": {
+                "Q1": "yes",
+                "Q6": "yes",
+                "Q7": "yes"
+            },
+            "recommendation": "R4"
+        },
+        {
+            "id": "RULE5",
+            "conditions": {
+                "Q1": "yes",
+                "Q8": "no"
+            },
+            "recommendation": "R5"
+        }
+    ],
+    "recommendations": [
+        {
+            "id": "R1",
+            "title": "Check the power connection",
+            "description": "The computer may not be receiving power. Check the socket, cable and power adapter."
+        },
+        {
+            "id": "R2",
+            "title": "Possible power supply problem",
+            "description": "Power is reaching part of the computer, but the system is not starting normally."
+        },
+        {
+            "id": "R3",
+            "title": "Possible display problem",
+            "description": "The computer appears to start, but no image is displayed. Check the monitor, cable or display connection."
+        },
+        {
+            "id": "R4",
+            "title": "Possible overheating problem",
+            "description": "The computer may be shutting down to protect itself from excessive heat. Check airflow and cooling."
+        },
+        {
+            "id": "R5",
+            "title": "Possible network problem",
+            "description": "The computer is running but cannot connect to Wi-Fi. Check the network connection and Wi-Fi settings."
+        }
+    ]
+}
