@@ -1,8 +1,8 @@
 ---
 icon:
-  type: bx:error-alt
+  type: material-symbols-light:user-attributes
   color: ochre
 ---
-OO CRUD
+Revision
 
-menu driven oo
+Week 9 Revision
