@@ -1,7 +1,7 @@
 ---
 icon:
   type: fluent-mdl2:post-update
-  color: ochre
+  color: HotPink
 ---
 OO CRUD
 

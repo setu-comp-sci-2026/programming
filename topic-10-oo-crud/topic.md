@@ -1,7 +1,7 @@
 ---
 icon:
-  type: bx:error-alt
-  color: ochre
+  type: fluent-mdl2:responses-menu
+  color: HotPink
 ---
 # 10: OO CRUD
 

@@ -1,7 +1,7 @@
 ---
 icon:
   type: material-symbols-light:user-attributes
-  color: ochre
+  color: HotPink
 ---
 Revision
 
