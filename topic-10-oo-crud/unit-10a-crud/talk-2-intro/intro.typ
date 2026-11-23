@@ -113,8 +113,10 @@ print(bank.accounts)  # []
   - The list stores a reference to that same object.
   - Changing the object through `alice` changes what
     we see when accessing it through the list.
-
-  *Key idea:* Both references point to the same object.
+ #align(center)[
+    #image("assets/shared.png", height: 100%, width: 95%)
+  ]
+  *Both references point to the same object.*
 ]
 
 #slide(title: [Read: Display Every Account])[
