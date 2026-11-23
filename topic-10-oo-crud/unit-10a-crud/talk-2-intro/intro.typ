@@ -66,7 +66,7 @@ class Bank:
 
 #slide(title: [From a Real Bank to Python Classes])[
   #align(center)[
-    #image("assets/bank.png", height: 95%, width: 95%)
+    #image("assets/bank.png", height: 80%, width: 95%)
   ]
 ]
 
