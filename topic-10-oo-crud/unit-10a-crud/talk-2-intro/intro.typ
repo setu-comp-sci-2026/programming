@@ -2,7 +2,7 @@
 #import themes.stargazer: *
 #show: stargazer-theme.with(
   aspect-ratio: "16-9",
-  config-info(title: [Python Programming Fundamentals], subtitle: [Monday — Object-Oriented CRUD], author: [Programming Fundamentals Team], institution: [SETU]),
+  config-info(title: [Python Programming Fundamentals], subtitle: [Object-Oriented CRUD], author: [Programming Fundamentals Team], institution: [SETU]),
 )
 #show raw.where(block: true): it => block(fill: rgb("#eaf2ff"), stroke: (paint: rgb("#3572A5"), thickness: 1pt), radius: 5pt, inset: 8pt, width: 100%, it)
 #title-slide()
@@ -66,7 +66,7 @@ class Bank:
 
 #slide(title: [From a Real Bank to Python Classes])[
   #align(center)[
-    #image("assets/bank.png", height: 80%, width: 95%)
+    #image("assets/bank.png", height: 110%, width: 95%)
   ]
 ]
 
