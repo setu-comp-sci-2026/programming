@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "key": "power_on",
+      "text": "Does the computer turn on?"
+    },
+    {
+      "key": "display_on",
+      "text": "Is there an image on the screen?"
+    }
+  ],
+  "rules": [
+    {
+      "when": {
+        "power_on": "no"
+      },
+      "advice": "Check the power cable and socket."
+    },
+    {
+      "when": {
+        "power_on": "yes",
+        "display_on": "no"
+      },
+      "advice": "Check the monitor connection."
+    },
+    {
+      "when": {
+        "power_on": "yes",
+        "display_on": "yes"
+      },
+      "advice": "Try restarting the computer or checking other symptoms."
+    }
+  ]
+}
