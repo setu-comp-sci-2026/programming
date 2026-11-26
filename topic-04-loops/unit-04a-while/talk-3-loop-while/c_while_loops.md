@@ -3,6 +3,6 @@ icon:
   type: carbon:while-loop
   color: purple
 ---
-# 04: Introduction to While loop
+# 04: while loop
 
 counting, validation, menu loops

@@ -3,7 +3,7 @@ icon:
   type: grommet-icons:overview
   color: purple
 ---
-# 04: Intro 
+# 04: For loops
 
-for loops
+intro
 

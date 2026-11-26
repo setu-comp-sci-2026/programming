@@ -3,4 +3,5 @@ icon:
   type: carbon:play
   color: purple
 ---
-json
+# 07: json
+structured data

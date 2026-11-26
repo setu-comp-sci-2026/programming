@@ -3,6 +3,6 @@ icon:
   type: bx:error-alt
   color: green
 ---
-Error Handling
+# 08: Error Handling
 
 try stmt · different types of errors

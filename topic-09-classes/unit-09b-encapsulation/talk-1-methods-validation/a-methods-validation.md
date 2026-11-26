@@ -3,6 +3,6 @@ icon:
   type: carbon:checkmark-filled
   color: teal
 ---
-Methods and Validation
+# 09: Methods and Validation
 
 adding methods · default params · validation · ValueError · testing

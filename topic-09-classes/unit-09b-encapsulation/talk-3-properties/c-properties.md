@@ -3,6 +3,6 @@ icon:
   type: carbon:settings
   color: teal
 ---
-Properties
+# 09: Properties
 
 @property · getter · setter · deleter · computed properties · validation

@@ -3,6 +3,6 @@ icon:
   type: carbon:search
   color: darkblue
 ---
-Searching Algorithms
+# 11: Searching Algorithms
 
 linear search · binary search · bisect module · searching objects
