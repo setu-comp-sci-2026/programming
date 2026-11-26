@@ -70,23 +70,26 @@ Compare Java: `public double totalPrice(double price, int quantity)`
 == Common hints — and what Python does with them
 
 ```python
-def greet(name: str) -> None:        # returns nothing
+def greet(name: str) -> None:           # returns nothing
     print(f"Hello, {name}")
 
-def is_adult(age: int) -> bool:
+def is_adult(age: int) -> bool:         # returns True/False
     return age >= 18
 
-def average(marks: list) -> float:
+def average(marks: list) -> float:      # returns a float
     return sum(marks) / len(marks)
 ```
-
+#pagebreak()
 Python does *not* enforce hints — this still runs:
 
 ```python
 print(total_price("ab", 3))   # ababab  (no error!)
 ```
+#pause
+Hints are documentation for *people* and *tools* (VS Code warns you about mismatches). 
 
-Hints are documentation for *people* and *tools* (VS Code warns you about mismatches). Unlike Java, the program itself ignores them.
+
+Unlike Java, the program itself ignores them.
 
 = Multiple Assignment
 
@@ -163,38 +166,71 @@ i, j = 0, 2
 data[i], data[j] = data[j], data[i]
 print(data)   # [12, 64, 25]
 ```
-
-You'll see this line in Bubble Sort and Selection Sort:
-
-`data[j], data[j + 1] = data[j + 1], data[j]`
-
+#pagebreak()
+You'll see this line in Bubble Sort:
+```python
+data[j], data[j + 1] = data[j + 1], data[j]
+```
 = Lambda Functions
 
-== Functions as arguments — `key=`
+== Default sorting — no key needed
 
-`sorted()` and `sort()` take a `key` argument: a *function* that is applied to each item to decide its sort position.
+For simple values, `sorted()` and `sort()` already know the order:
 
 ```python
-def get_length(word):
-    return len(word)
-
-words = ["banana", "fig", "apple"]
-
-print(sorted(words, key=get_length))   # ['fig', 'apple', 'banana']
+print(sorted([64, 25, 12, 22, 11]))     # [11, 12, 22, 25, 64]
+print(sorted(["banana", "fig", "apple"])) # ['apple', 'banana', 'fig']
+print(sorted([3, 1, 2], reverse=True))  # [3, 2, 1]
 ```
 
-Note: we pass `get_length` *without brackets* — we hand over the function itself, we don't call it. `sorted()` calls it on each word for us.
+- Numbers sort numerically, strings alphabetically
+- Python compares items with `<` — it knows how to do that for `int`, `float` and `str`
+- Careful: capitals come before lowercase — `sorted(["banana", "Cherry"])` gives `['Cherry', 'banana']`
+
+== Sorting objects — which field?
+
+```python
+products = [
+    Product("Butter", 3.00, 104),
+    Product("Apple",  1.99, 101),
+    Product("Milk",   1.20, 103),
+]
+
+s = sorted(products)
+# TypeError: '<' not supported between instances of 'Product' and 'Product'
+```
+
+Python doesn't know how to compare two products. By *name*? By *price*? By *id*?
+
+We need to tell it the *sort field* — for each product, *which value* to sort on.
+
+== The `key=` argument — choosing the sort field
+
+`key` takes a *function*: given one item, it returns the value to sort by.
+
+```python
+def get_price_of(p):
+    return p.get_price()       # the sort field: price
+
+s = sorted(products, key=get_price_of)
+# Milk (1.20), Apple (1.99), Butter (3.00)
+```
+
+- We pass `get_price_of` *without brackets* — we hand over the function itself, we don't call it
+- `sorted()` calls it on each product, then sorts by the values it gets back
+
+Any existing function works too: `sorted(words, key=len)` sorts by length.
 
 == Lambda — a small, nameless function
 
-Writing a whole `def` for a one-line function is a lot of ceremony. A *lambda* does the same job inline:
+Writing a whole `def` just to pick out a sort field is a lot of ceremony. A *lambda* does the same job inline:
 
 ```python
 # These two are equivalent
-def get_length(word):
-    return len(word)
+def get_price_of(p):
+    return p.get_price()
 
-lambda word: len(word)
+lambda p: p.get_price()
 ```
 
 #table(
@@ -202,27 +238,30 @@ lambda word: len(word)
   stroke: 0.5pt,
   inset: 8pt,
   [`lambda`], [keyword: "here comes a function"],
-  [`word`], [the parameter(s), before the colon],
-  [`len(word)`], [a *single expression* — its value is returned automatically (no `return`)],
+  [`p`], [the parameter(s), before the colon],
+  [`p.get_price()`], [a *single expression* — its value is returned automatically (no `return`)],
 )
 
 == Lambdas with `key=`
 
+Change the sort field just by changing the lambda:
+
 ```python
+by_price = sorted(products, key=lambda p: p.get_price())  # Milk, Apple, Butter
+by_name  = sorted(products, key=lambda p: p.get_name())   # Apple, Butter, Milk
+
 words = ["banana", "fig", "apple"]
-print(sorted(words, key=lambda word: len(word)))
-# ['fig', 'apple', 'banana']
+print(sorted(words, key=lambda word: len(word)))  # ['fig', 'apple', 'banana']
 
 nums = [-7, 3, -1, 5]
-print(sorted(nums, key=lambda n: abs(n)))
-# [-1, 3, 5, -7]
-
-# With objects: sort Products by price
-products.sort(key=lambda p: p.get_price())
+print(sorted(nums, key=lambda n: abs(n)))         # [-1, 3, 5, -7]
 ```
+#pagebreak()
+Read `lambda p: p.get_price()` as: 
 
-Read `lambda p: p.get_price()` as: _"given a product `p`, use its price"_.
+_"given a product `p`, sort by its price"_.
 
+#pause 
 Use a lambda for short, throw-away functions; use `def` for anything longer or reused.
 
 == Writing a function that *takes* a function
