@@ -59,29 +59,29 @@
 
 #v(1em)
 Examples:
-- A `PremiumMember` *is-a* `Person` → Inheritance
+- A `SavingsAccount` *is-a* `BankAccount` → Inheritance
 - A `Shop` *has-a* list of `Products` → Composition
 - A `Car` *has-a* `Engine` → Composition (not inheritance!)
 
 = `isinstance()` and `issubclass()`
 
 ```python
-alice = PremiumMember("Alice", "alice@example.com", "Gold")
+alice = SavingsAccount("S001", "Alice", 1000, 0.03)
 
-isinstance(alice, PremiumMember)  # True
-isinstance(alice, Person)         # True  ← also a Person!
-isinstance(alice, FreeUser)       # False
+isinstance(alice, SavingsAccount)   # True
+isinstance(alice, BankAccount)      # True  ← also a BankAccount!
+isinstance(alice, CurrentAccount)   # False
 
-issubclass(PremiumMember, Person)    # True
-issubclass(FreeUser, Person)         # True
-issubclass(Person, PremiumMember)    # False (wrong direction)
+issubclass(SavingsAccount, BankAccount)   # True
+issubclass(CurrentAccount, BankAccount)   # True
+issubclass(BankAccount, SavingsAccount)   # False (wrong direction)
 ```
 
 `isinstance` is very useful for type checking in functions:
 ```python
-def process(user):
-    if isinstance(user, PremiumMember):
-        grant_premium_access()
+def check_account(acc):
+    if isinstance(acc, CurrentAccount):
+        print(f"Overdraft available: €{acc.get_overdraft_limit():.0f}")
 ```
 
 = Composition Example
@@ -138,20 +138,23 @@ class Car:
 = Using `isinstance` for Safe Processing
 
 ```python
-def print_user_info(user: Person):
-    print(f"Name: {user.get_name()}")
-    print(f"Email: {user.get_email()}")
+def print_account_info(acc: BankAccount):
+    print(f"Owner:   {acc.get_owner()}")
+    print(f"Balance: €{acc.get_balance():.2f}")
 
-    if isinstance(user, PremiumMember):
-        print(f"Plan: {user.get_subscription()}")
-    elif isinstance(user, FreeUser):
-        print(f"Post limit: {user.get_max_posts()}")
+    if isinstance(acc, SavingsAccount):
+        print(f"Interest rate: {acc.get_interest_rate():.1%}")
+    elif isinstance(acc, CurrentAccount):
+        print(f"Overdraft limit: €{acc.get_overdraft_limit():.0f}")
 
-# Works for any subclass of Person
-for user in all_users:
-    print_user_info(user)
+# Works for any subclass of BankAccount
+for acc in all_accounts:
+    print_account_info(acc)
     print("---")
 ```
+
+Careful with order: a `FixedTermAccount` *is-a* `SavingsAccount` too, so check the most specific class first.
+
 #slide(
     title: none,
     header: none,

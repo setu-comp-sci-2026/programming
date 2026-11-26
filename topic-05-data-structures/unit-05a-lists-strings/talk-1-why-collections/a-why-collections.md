@@ -3,6 +3,6 @@ icon:
   type: carbon:data-structured
   color: orange
 ---
-Why Collections?
+# 05: Why Collections?
 
 why collections? · data structures · Python fundamentals

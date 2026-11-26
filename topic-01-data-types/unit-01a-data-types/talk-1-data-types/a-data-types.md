@@ -3,6 +3,6 @@ icon:
   type: codicon:variable-group
   color: blue
 ---
-# Data Types
+# 01: Data Types
 
 variables, data types, arithmetic operations

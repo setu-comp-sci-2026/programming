@@ -3,5 +3,6 @@ icon:
   type: carbon:for-loop
   color: purple
 ---
-Introduction to for loops
+# 04: More for loops
 
+for i in ...

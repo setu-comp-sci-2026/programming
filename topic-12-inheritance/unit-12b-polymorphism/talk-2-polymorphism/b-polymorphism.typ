@@ -53,12 +53,13 @@
 Polymorphism lets objects of *different types* respond to the *same method call* in their own way.
 
 ```python
-for user in users:
-    print(user)     # calls __str__ — different output per type
+for acc in accounts:
+    print(acc)              # calls __str__ — different output per type
+    acc.monthly_update()    # different behaviour per type
 ```
 
-- `FreeUser.__str__` produces: `"FreeUser: Alice (max 10 posts)"`
-- `PremiumMember.__str__` produces: `"PremiumMember: Bob [Gold]"`
+- `SavingsAccount`: prints its interest rate; `monthly_update()` adds interest
+- `CurrentAccount`: prints its overdraft; `monthly_update()` charges a fee if overdrawn
 
 Same call (`print`), different behaviour — that is polymorphism.
 

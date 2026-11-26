@@ -5,4 +5,4 @@ icon:
 ---
 # 12: Inheritance
 
-inheritance · is-a relationship · super() · method overriding · polymorphism · Social Network example
+inheritance · is-a relationship · super() · method overriding · polymorphism · Bank Accounts example

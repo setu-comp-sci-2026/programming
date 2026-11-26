@@ -65,19 +65,21 @@ Without `super().__init__()`, the parent's attributes are never set up!
 = Calling Parent `__init__`
 
 ```python
-class Person:
-    def __init__(self, name: str, email: str):
-        self.__name = name
-        self.__email = email
+class BankAccount:
+    def __init__(self, account_no: str, owner: str, balance: float = 0):
+        self._account_no = account_no
+        self._owner = owner
+        self._balance = balance
 
-class PremiumMember(Person):
-    def __init__(self, name: str, email: str,
-                 subscription: str):
-        super().__init__(name, email)   # sets __name, __email
-        self.__subscription = subscription
 
-pm = PremiumMember("Alice", "alice@example.com", "Gold")
-print(pm.get_name())   # Alice  ← set by Person.__init__
+class SavingsAccount(BankAccount):
+    def __init__(self, account_no: str, owner: str,
+                 balance: float = 0, interest_rate: float = 0.02):
+        super().__init__(account_no, owner, balance)   # sets the 3 shared attributes
+        self._interest_rate = interest_rate            # only the new one here
+
+s = SavingsAccount("S001", "Alice", 1000, 0.03)
+print(s.get_owner())   # Alice  ← set by BankAccount.__init__
 ```
 
 = Extending Parent Methods
@@ -85,18 +87,19 @@ print(pm.get_name())   # Alice  ← set by Person.__init__
 == Adding to, not replacing
 
 ```python
-class Person:
+class BankAccount:
     def describe(self) -> str:
-        return f"Name: {self.__name}, Email: {self.__email}"
+        return f"{self._account_no} ({self._owner}): €{self._balance:.2f}"
 
-class PremiumMember(Person):
+
+class SavingsAccount(BankAccount):
     def describe(self) -> str:
-        base = super().describe()   # get parent's text
-        return f"{base}, Plan: {self.__subscription}"
+        base = super().describe()          # get parent's text
+        return f"{base}, Interest: {self._interest_rate:.1%}"
 
-pm = PremiumMember("Alice", "alice@example.com", "Gold")
-print(pm.describe())
-# Name: Alice, Email: alice@example.com, Plan: Gold
+s = SavingsAccount("S001", "Alice", 1000, 0.03)
+print(s.describe())
+# S001 (Alice): €1000.00, Interest: 3.0%
 ```
 
 = When to Use `super()`
@@ -109,29 +112,30 @@ print(pm.describe())
 ```python
 # EXTENDING — calls parent first, then adds
 def __str__(self):
-    return super().__str__() + f" [Premium]"
+    return super().__str__() + " [Savings]"
 
 # REPLACING — ignores parent completely
 def __str__(self):
-    return f"PremiumMember: {self.get_name()}"
+    return f"SavingsAccount: {self.get_owner()}"
 ```
 
 = Multiple Levels of Inheritance
 
+A fixed-term account *is-a* savings account (with interest) that you can't withdraw from until the term ends:
+
 ```python
-class Person:
-    def __init__(self, name): self.__name = name
-    def greet(self): return f"Hi, I'm {self.__name}"
+class BankAccount:
+    def __init__(self, account_no, owner, balance=0): ...
 
-class User(Person):
-    def __init__(self, name, username):
-        super().__init__(name)
-        self.__username = username
+class SavingsAccount(BankAccount):
+    def __init__(self, account_no, owner, balance=0, interest_rate=0.02):
+        super().__init__(account_no, owner, balance)             # → BankAccount
+        self._interest_rate = interest_rate
 
-class AdminUser(User):
-    def __init__(self, name, username, access_level):
-        super().__init__(name, username)   # calls User.__init__
-        self.__access_level = access_level
+class FixedTermAccount(SavingsAccount):
+    def __init__(self, account_no, owner, balance, interest_rate, term_months):
+        super().__init__(account_no, owner, balance, interest_rate)  # → SavingsAccount
+        self._term_months = term_months
 ```
 
 `super()` follows the *Method Resolution Order* (MRO) — Python's rule for which class to look in next.

@@ -3,4 +3,6 @@ icon:
   type: entypo:install
   color: green
 ---
-Setting  up Python for VSCode
+# 00: Setting up Python 
+
+using vsCode

@@ -3,6 +3,6 @@ icon:
   type: carbon:function-2
   color: blue
 ---
-Scope and Pure Functions
+# 03: Scope and Pure Functions
 
 local vs global · LEGB rule · pure functions · avoiding global state

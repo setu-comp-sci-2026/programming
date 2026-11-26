@@ -3,6 +3,6 @@ icon:
   type: carbon:data-base
   color: orange
 ---
-Dictionary Basics
+# 05: Dictionary Basics
 
 dictionary basics · data structures · Python fundamentals

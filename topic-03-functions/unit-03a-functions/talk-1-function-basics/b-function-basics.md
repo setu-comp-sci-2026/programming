@@ -3,6 +3,6 @@ icon:
   type: carbon:function
   color: blue
 ---
-Function Basics
+# 03: Function Basics
 
 def keyword · calling functions · None return · docstrings

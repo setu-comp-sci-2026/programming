@@ -47,18 +47,19 @@
 = Recap — Inheritance
 
 ```python
-class Person:
-    def __init__(self, name, email):
-        self.__name = name
-        self.__email = email
-    def get_name(self): return self.__name
+class BankAccount:
+    def __init__(self, account_no, owner, balance=0):
+        self._account_no = account_no
+        self._owner = owner
+        self._balance = balance
+    def get_owner(self): return self._owner
 
-class PremiumMember(Person):
-    def __init__(self, name, email, sub):
-        super().__init__(name, email)
-        self.__sub = sub
+class SavingsAccount(BankAccount):
+    def __init__(self, account_no, owner, balance=0, rate=0.02):
+        super().__init__(account_no, owner, balance)
+        self._rate = rate
     def __str__(self):
-        return f"PremiumMember: {self.get_name()} [{self.__sub}]"
+        return f"SavingsAccount: {self.get_owner()} @ {self._rate:.1%}"
 ```
 
 Key points:
@@ -69,12 +70,13 @@ Key points:
 = Recap — Polymorphism
 
 ```python
-users = [FreeUser("Alice", "a@x.com"),
-         PremiumMember("Bob", "b@x.com", "Gold")]
+accounts = [SavingsAccount("S001", "Alice", 1000, 0.03),
+            CurrentAccount("C001", "Bob", -200)]
 
-for user in users:
-    print(user)    # different __str__ per type
-    print(user.get_name())   # inherited from Person
+for acc in accounts:
+    print(acc)                # different __str__ per type
+    acc.monthly_update()      # interest vs overdraft fee
+    print(acc.get_owner())    # inherited from BankAccount
 ```
 
 Polymorphism = same call, different behaviour per object type.

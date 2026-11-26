@@ -3,6 +3,6 @@ icon:
   type: material-icon-theme:python
   color: green
 ---
-Intro to Python
+# 00: Intro to Python
 
 Python Basics
