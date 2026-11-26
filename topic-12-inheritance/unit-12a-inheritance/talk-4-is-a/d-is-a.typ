@@ -105,12 +105,12 @@ class Car:
 
 = When to Use Inheritance
 
-Use inheritance when:
+*Use inheritance when:*
 - The is-a relationship is genuine and stable
 - The child class really is a more specific version of the parent
 - You want the child to be usable anywhere the parent is used
-
-Avoid inheritance when:
+#pause
+*Avoid inheritance when:*
 - The relationship is really has-a
 - You're inheriting just to reuse methods (use composition instead)
 - The hierarchy would become deep and confusing

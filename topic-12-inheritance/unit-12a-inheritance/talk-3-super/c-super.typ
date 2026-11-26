@@ -152,6 +152,7 @@ print(C.__mro__)
 ```
 
 When you call a method on `C`, Python searches: `C` → `B` → `A` → `object`.
+#pause
 
 The first class in the MRO that defines the method wins.
 

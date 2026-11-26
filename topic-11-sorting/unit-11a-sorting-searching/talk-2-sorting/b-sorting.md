@@ -3,6 +3,6 @@ icon:
   type: carbon:sort-ascending
   color: darkblue
 ---
-Sorting Algorithms
+# 11: Sorting Algorithms
 
 bubble sort · selection sort · Python sort() · key= · time complexity
