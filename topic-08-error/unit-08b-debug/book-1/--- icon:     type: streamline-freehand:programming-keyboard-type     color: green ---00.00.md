@@ -1,4 +1,11 @@
-# Week 8 Lab — Importing Python Modules
+---
+icon:
+    type: streamline-freehand:programming-keyboard-type
+    color: green
+---
+# Lab 08b 
+
+Importing Python Modules
 
 ## Learning outcomes
 By the end of this lab, you should be able to:
