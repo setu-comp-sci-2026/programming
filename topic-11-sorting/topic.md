@@ -5,4 +5,4 @@ icon:
 ---
 # 11: Searching, Sorting, misc
 
-type hints · lambda · abstract classes · ABC · @abstractmethod · protocols · sorting algorithms · searching algorithms
+type hints · lambda · sorting algorithms · searching algorithms
