@@ -1,7 +1,7 @@
 ---
-icon:
-    type: streamline-freehand:programming-keyboard-type
-    color: green
+    icon: 
+      type: streamline-freehand:programming-keyboard-type
+      color: green
 ---
 # Lab 08b 
 
